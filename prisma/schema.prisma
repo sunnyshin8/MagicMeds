@@ -1,0 +1,513 @@
+// Prisma schema for MagicMeds healthcare telemedicine platform
+// Comprehensive database schema supporting multilingual healthcare, offline sync, and HIPAA compliance
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User Management
+model User {
+  id                String   @id @default(cuid())
+  email             String   @unique
+  phone             String?  @unique
+  passwordHash      String
+  preferredLanguage String   @default("en")
+  locationState     String?
+  locationDistrict  String?
+  isOfflineEnabled  Boolean  @default(false)
+  isVerified        Boolean  @default(false)
+  role              UserRole @default(PATIENT)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  lastLoginAt       DateTime?
+
+  // Relations
+  healthProfile      HealthProfile?
+  consultations      Consultation[]
+  symptoms           SymptomRecord[]
+  vitalSigns         VitalSigns[]
+  educationProgress  EducationProgress[]
+  voiceSessions      VoiceSession[]
+  auditLogs          AuditLog[]
+  notifications      Notification[]
+  emergencyContacts  EmergencyContact[]
+
+  @@map("users")
+}
+
+enum UserRole {
+  PATIENT
+  DOCTOR
+  NURSE
+  ADMIN
+  SUPPORT
+}
+
+// Health Profile and Medical Information
+model HealthProfile {
+  id                String    @id @default(cuid())
+  userId            String    @unique
+  age               Int
+  gender            Gender
+  height            Float?    // in cm
+  weight            Float?    // in kg
+  bloodType         String?
+  allergies         String[]  // JSON array
+  chronicConditions String[]  // JSON array
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // Relations
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  medications       Medication[]
+  familyHistory     FamilyHistory?
+  lifestyleFactors  LifestyleFactors?
+
+  @@map("health_profiles")
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+  PREFER_NOT_TO_SAY
+}
+
+model Medication {
+  id              String    @id @default(cuid())
+  healthProfileId String
+  name            String
+  dosage          String
+  frequency       String
+  startDate       DateTime
+  endDate         DateTime?
+  prescribedBy    String
+  isActive        Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  // Relations
+  healthProfile   HealthProfile @relation(fields: [healthProfileId], references: [id], onDelete: Cascade)
+
+  @@map("medications")
+}
+
+model FamilyHistory {
+  id              String    @id @default(cuid())
+  healthProfileId String    @unique
+  diabetes        Boolean   @default(false)
+  hypertension    Boolean   @default(false)
+  heartDisease    Boolean   @default(false)
+  cancer          Boolean   @default(false)
+  mentalHealth    Boolean   @default(false)
+  other           String[]  // JSON array
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  // Relations
+  healthProfile   HealthProfile @relation(fields: [healthProfileId], references: [id], onDelete: Cascade)
+
+  @@map("family_history")
+}
+
+model LifestyleFactors {
+  id                  String    @id @default(cuid())
+  healthProfileId     String    @unique
+  smokingStatus       SmokingStatus @default(NEVER)
+  alcoholConsumption  AlcoholConsumption @default(NONE)
+  exerciseFrequency   ExerciseFrequency @default(NONE)
+  dietType            DietType  @default(OTHER)
+  sleepHours          Float     @default(8)
+  stressLevel         Int       @default(3) // 1-5 scale
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  // Relations
+  healthProfile       HealthProfile @relation(fields: [healthProfileId], references: [id], onDelete: Cascade)
+
+  @@map("lifestyle_factors")
+}
+
+enum SmokingStatus {
+  NEVER
+  FORMER
+  CURRENT
+}
+
+enum AlcoholConsumption {
+  NONE
+  OCCASIONAL
+  MODERATE
+  HEAVY
+}
+
+enum ExerciseFrequency {
+  NONE
+  LIGHT
+  MODERATE
+  INTENSE
+}
+
+enum DietType {
+  VEGETARIAN
+  NON_VEGETARIAN
+  VEGAN
+  OTHER
+}
+
+// Vital Signs and Health Metrics
+model VitalSigns {
+  id                String    @id @default(cuid())
+  userId            String
+  systolicBP        Int?      // mmHg
+  diastolicBP       Int?      // mmHg
+  heartRate         Int?      // bpm
+  temperature       Float?    // Celsius
+  oxygenSaturation  Int?      // percentage
+  bloodSugar        Float?    // mg/dL
+  weight            Float?    // kg
+  recordedAt        DateTime  @default(now())
+  recordedBy        String?   // Device or healthcare provider
+  notes             String?
+  isManualEntry     Boolean   @default(true)
+  syncStatus        SyncStatus @default(SYNCED)
+
+  // Relations
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("vital_signs")
+}
+
+// Symptom Management
+model SymptomRecord {
+  id            String    @id @default(cuid())
+  userId        String
+  symptom       String
+  severity      Severity
+  duration      String
+  description   String?
+  language      String    @default("en")
+  isResolved    Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  syncStatus    SyncStatus @default(SYNCED)
+
+  // Relations
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  analysis      SymptomAnalysis?
+
+  @@map("symptom_records")
+}
+
+enum Severity {
+  MILD
+  MODERATE
+  SEVERE
+  CRITICAL
+}
+
+model SymptomAnalysis {
+  id                      String    @id @default(cuid())
+  symptomRecordId         String    @unique
+  possibleConditions      Json      // Array of condition objects with confidence scores
+  redFlags                String[]  // Emergency symptoms
+  nextSteps               String[]  
+  consultationRecommended Boolean   @default(false)
+  urgencyLevel            UrgencyLevel @default(ROUTINE)
+  confidence              Float     // Overall confidence score
+  language                String    @default("en")
+  createdAt               DateTime  @default(now())
+  
+  // Relations
+  symptomRecord           SymptomRecord @relation(fields: [symptomRecordId], references: [id], onDelete: Cascade)
+
+  @@map("symptom_analysis")
+}
+
+enum UrgencyLevel {
+  ROUTINE
+  URGENT
+  EMERGENCY
+}
+
+// Consultations and Appointments
+model Consultation {
+  id              String    @id @default(cuid())
+  patientId       String
+  providerId      String?
+  type            ConsultationType
+  status          ConsultationStatus @default(SCHEDULED)
+  scheduledAt     DateTime
+  startedAt       DateTime?
+  completedAt     DateTime?
+  symptoms        String[]  // JSON array
+  diagnosis       String?
+  treatment       String?
+  prescriptions   Json?     // Array of prescription objects
+  followUpRequired Boolean  @default(false)
+  followUpDate    DateTime?
+  notes           String?
+  language        String    @default("en")
+  isOffline       Boolean   @default(false)
+  syncStatus      SyncStatus @default(SYNCED)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  // Relations
+  patient         User      @relation(fields: [patientId], references: [id], onDelete: Cascade)
+
+  @@map("consultations")
+}
+
+enum ConsultationType {
+  AI
+  HUMAN
+  VIDEO
+  VOICE
+  CHAT
+}
+
+enum ConsultationStatus {
+  SCHEDULED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+}
+
+// Health Education and Gamification
+model EducationModule {
+  id                    String    @id @default(cuid())
+  title                 String
+  description           String
+  content               Json      // Rich content structure
+  language              String    @default("en")
+  difficulty            Difficulty @default(BEGINNER)
+  estimatedDuration     Int       // in minutes
+  topics                String[]  // JSON array
+  isOfflineAvailable    Boolean   @default(false)
+  gamificationElements  Json?     // Badges, points, challenges
+  isActive              Boolean   @default(true)
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  // Relations
+  progress              EducationProgress[]
+
+  @@map("education_modules")
+}
+
+enum Difficulty {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+model EducationProgress {
+  id            String    @id @default(cuid())
+  userId        String
+  moduleId      String
+  progress      Float     @default(0) // 0-100 percentage
+  completed     Boolean   @default(false)
+  score         Float?    // Quiz score if applicable
+  timeSpent     Int       @default(0) // in minutes
+  badges        String[]  // Earned badges
+  startedAt     DateTime  @default(now())
+  completedAt   DateTime?
+  lastAccessAt  DateTime  @default(now())
+
+  // Relations
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  module        EducationModule @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, moduleId])
+  @@map("education_progress")
+}
+
+// Voice and Audio Processing
+model VoiceSession {
+  id                String    @id @default(cuid())
+  userId            String
+  transcription     String?
+  detectedLanguage  String?
+  confidence        Float?
+  extractedSymptoms String[]  // JSON array
+  audioUrl          String?
+  processingStatus  ProcessingStatus @default(PENDING)
+  startTime         DateTime  @default(now())
+  endTime           DateTime?
+  duration          Int?      // in seconds
+  syncStatus        SyncStatus @default(SYNCED)
+
+  // Relations
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("voice_sessions")
+}
+
+enum ProcessingStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+// Emergency and Contact Management
+model EmergencyContact {
+  id           String    @id @default(cuid())
+  userId       String
+  name         String
+  phone        String
+  relationship String
+  isPrimary    Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  // Relations
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("emergency_contacts")
+}
+
+// Notifications and Alerts
+model Notification {
+  id        String    @id @default(cuid())
+  userId    String
+  title     String
+  message   String
+  type      NotificationType
+  priority  NotificationPriority @default(NORMAL)
+  isRead    Boolean   @default(false)
+  data      Json?     // Additional data for the notification
+  scheduledAt DateTime?
+  sentAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  // Relations
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("notifications")
+}
+
+enum NotificationType {
+  APPOINTMENT_REMINDER
+  MEDICATION_REMINDER
+  HEALTH_TIP
+  EMERGENCY_ALERT
+  SYSTEM_UPDATE
+  EDUCATIONAL_CONTENT
+}
+
+enum NotificationPriority {
+  LOW
+  NORMAL
+  HIGH
+  URGENT
+}
+
+// Security and Audit
+model AuditLog {
+  id          String    @id @default(cuid())
+  userId      String
+  action      String
+  dataType    String
+  recordId    String?
+  ipAddress   String?
+  userAgent   String?
+  success     Boolean   @default(true)
+  details     Json?
+  timestamp   DateTime  @default(now())
+
+  // Relations
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("audit_logs")
+}
+
+// Offline and Sync Management
+model OfflineData {
+  id           String    @id @default(cuid())
+  userId       String
+  dataType     String
+  recordId     String
+  data         Json
+  operation    Operation @default(CREATE)
+  syncPriority SyncPriority @default(MEDIUM)
+  syncStatus   SyncStatus @default(PENDING)
+  lastModified DateTime  @default(now())
+  retryCount   Int       @default(0)
+  errorMessage String?
+
+  @@unique([userId, dataType, recordId])
+  @@map("offline_data")
+}
+
+enum Operation {
+  CREATE
+  UPDATE
+  DELETE
+}
+
+enum SyncPriority {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum SyncStatus {
+  PENDING
+  SYNCING
+  SYNCED
+  CONFLICT
+  FAILED
+}
+
+// Health Risk Assessment
+model HealthRiskAssessment {
+  id                      String    @id @default(cuid())
+  userId                  String
+  diabetesRisk            Float     // 0-100 score
+  hypertensionRisk        Float     // 0-100 score
+  cardiovascularRisk      Float     // 0-100 score
+  pregnancyComplications  Float?    // For pregnant users
+  childMalnutritionRisk   Float?    // For child profiles
+  riskFactors             String[]  // JSON array
+  recommendations         String[]  // JSON array
+  assessmentDate          DateTime  @default(now())
+  nextAssessmentDate      DateTime?
+  
+  @@map("health_risk_assessments")
+}
+
+// Multilingual Support
+model Translation {
+  id          String    @id @default(cuid())
+  key         String
+  language    String
+  value       String
+  context     String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([key, language])
+  @@map("translations")
+}
+
+// System Configuration
+model SystemConfig {
+  id        String    @id @default(cuid())
+  key       String    @unique
+  value     String
+  dataType  String    @default("string") // string, number, boolean, json
+  category  String    @default("general")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@map("system_config")
+}
