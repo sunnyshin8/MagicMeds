@@ -209,8 +209,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact & Support
 
-- **Project Maintainer**: [Your Name]
-- **Email**: [your-email@example.com]
+- **Project Maintainer**: Hemal Shingloo
+- **Email**: shingloo93@gmail.com
 - **Issues**: [GitHub Issues](https://github.com/your-username/magicmeds/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/your-username/magicmeds/discussions)
 
