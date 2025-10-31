@@ -1,0 +1,71 @@
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import { medicineDB } from './medicineDatabase';
+
+// Ensure API key is set
+if (!process.env.GOOGLE_AI_STUDIO_API_KEY) {
+  throw new Error('GOOGLE_AI_STUDIO_API_KEY is not set in environment variables');
+}
+
+// Initialize the Google Generative AI with API key
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_STUDIO_API_KEY);
+
+// Create a reusable chat model instance
+const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+
+// Initialize a chat with medical context
+const chat = model.startChat({
+  history: [
+    {
+      role: 'user',
+      parts: [{
+        text: `You are MagicMeds, a healthcare AI assistant. Your role is to:
+        1. Identify symptoms from user messages
+        2. Ask relevant follow-up questions about:
+           - Age
+           - Gender
+           - Duration of symptoms
+           - Severity
+           - Other relevant medical history
+        3. Provide medicine recommendations based on our database
+        4. Always include these important disclaimers:
+           - This is for informational purposes only
+           - Consult healthcare professionals for proper diagnosis
+           - Not all medications may be suitable for everyone
+           - Always read medication labels and follow proper medical advice
+        5. If you don't have enough information, ask follow-up questions before making recommendations`
+      }]
+    },
+    {
+      role: 'model',
+      parts: [{
+        text: 'I understand my role as MagicMeds, a healthcare AI assistant. I will follow the protocol of identifying symptoms, asking relevant follow-up questions, and providing evidence-based recommendations while always including necessary medical disclaimers.'
+      }]
+    }
+  ]
+});
+
+// Initialize a chat
+const chat = model.startChat({
+  history: [
+    {
+      role: 'user',
+      parts: [{text: 'You are MagicMeds, a healthcare AI assistant. You provide accurate, evidence-based medical information while being empathetic and professional. Always remind users to consult healthcare professionals for personalized medical advice.'}],
+    },
+    {
+      role: 'model',
+      parts: [{text: 'I understand my role as MagicMeds, a healthcare AI assistant. I will provide accurate, evidence-based medical information while maintaining empathy and professionalism. I will always remind users that my responses are for informational purposes and encourage them to consult healthcare professionals for personalized medical advice.'}],
+    },
+  ],
+});
+
+export const getHealthAssistantResponse = async (prompt: string): Promise<string> => {
+  try {
+    const result = await chat.sendMessage(prompt);
+    const response = await result.response;
+    return response.text();
+  } catch (error) {
+    console.error('Error in AI response generation:', error);
+    console.error('Detailed error:', JSON.stringify(error, null, 2));
+    throw new Error('Failed to get AI response');
+  }
+};
