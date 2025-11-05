@@ -1,104 +1,165 @@
+﻿'use client';
+
+import { Box, Container, Typography, Card, CardContent, List, ListItem, ListItemText } from '@mui/material';
+
 export default function Services() {
   const mainServices = [
     {
       title: 'AI Health Assistant',
       description: 'Get instant answers to your health-related questions through our advanced AI-powered chat interface.',
-      color: 'blue',
+      icon: '🤖',
+      gradient: 'linear-gradient(135deg, #134e5e 0%, #71b280 100%)',
       features: ['24/7 Availability', 'Multilingual Support', 'Personalized Responses', 'Quick Symptom Analysis']
     },
     {
       title: 'Health Information',
       description: 'Access reliable and up-to-date health information on various topics and conditions.',
-      color: 'green',
+      icon: '📚',
+      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
       features: ['Expert-Reviewed Content', 'Easy to Understand', 'Regular Updates', 'Comprehensive Coverage']
     },
     {
       title: 'Symptom Guidance',
       description: 'Get preliminary guidance about your symptoms and understand when to seek professional medical help.',
-      color: 'purple',
+      icon: '🏥',
+      gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
       features: ['AI-Powered Analysis', 'Risk Assessment', 'Treatment Suggestions', 'Emergency Guidance']
     },
     {
       title: 'Health Tips & Wellness',
       description: 'Receive personalized health tips and wellness recommendations for a healthier lifestyle.',
-      color: 'orange',
+      icon: '💪',
+      gradient: 'linear-gradient(135deg, #2c5364 0%, #4facfe 100%)',
       features: ['Personalized Advice', 'Diet Guidelines', 'Exercise Plans', 'Mental Wellness Tips']
     }
   ];
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white shadow-lg rounded-lg p-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">Our Services</h1>
+    <Box sx={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #134e5e 0%, #71b280 50%, #4facfe 100%)',
+      py: 6
+    }}>
+      <Container maxWidth="lg">
+        <Typography 
+          variant="h3" 
+          component="h1" 
+          sx={{ 
+            mb: 6, 
+            textAlign: 'center',
+            color: '#fff',
+            fontWeight: 'bold',
+            background: 'linear-gradient(45deg, #43e97b, #00f2fe)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent'
+          }}
+        >
+          Our Healthcare Services
+        </Typography>
 
-          <div className="grid gap-8">
-            {mainServices.map((service) => (
-              <div key={service.title} className={`bg-${service.color}-50 p-6 rounded-lg`}>
-                <h2 className={`text-xl font-semibold text-${service.color}-900 mb-3`}>
-                  {service.title}
-                </h2>
-                <p className={`text-${service.color}-800 mb-4`}>
-                  {service.description}
-                </p>
-                <ul className="grid grid-cols-2 gap-2">
-                  {service.features.map((feature) => (
-                    <li key={feature} className={`text-${service.color}-700 flex items-center`}>
-                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+        <Box sx={{
+          display: 'grid',
+          gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' },
+          gap: 4
+        }}>
+          {mainServices.map((service, index) => {
+            return (
+              <Card 
+                key={service.title}
+                sx={{
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(15px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  borderRadius: '20px',
+                  boxShadow: '0 15px 35px rgba(0, 0, 0, 0.1)',
+                  overflow: 'hidden',
+                  position: 'relative',
+                  '&:hover': {
+                    transform: 'translateY(-5px)',
+                    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)',
+                  },
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                <Box sx={{
+                  height: '5px',
+                  background: service.gradient
+                }} />
+                
+                <CardContent sx={{ p: 4 }}>
+                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                    <Box sx={{
+                      p: 2,
+                      borderRadius: '50%',
+                      background: service.gradient,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      mr: 2
+                    }}>
+                      <Typography sx={{ fontSize: 32 }}>
+                        {service.icon}
+                      </Typography>
+                    </Box>
+                    <Typography 
+                      variant="h5" 
+                      component="h2"
+                      sx={{
+                        color: '#fff',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                      {service.title}
+                    </Typography>
+                  </Box>
+                  
+                  <Typography 
+                    variant="body1" 
+                    sx={{ 
+                      mb: 3,
+                      color: 'rgba(255, 255, 255, 0.8)',
+                      lineHeight: 1.6
+                    }}
+                  >
+                    {service.description}
+                  </Typography>
 
-          {/* Additional Health Resources */}
-          <div className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Health Resources</h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              {[
-                {
-                  title: 'Health Articles',
-                  description: 'Regular updates on various health topics written by medical experts.'
-                },
-                {
-                  title: 'Video Consultations',
-                  description: 'Connect with qualified doctors through secure video calls.'
-                },
-                {
-                  title: 'Emergency Support',
-                  description: '24/7 access to emergency medical guidance and hospital referrals.'
-                },
-                {
-                  title: 'Medication Reminders',
-                  description: 'Set up personalized reminders for medications and health routines.'
-                }
-              ].map((resource) => (
-                <div key={resource.title} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{resource.title}</h3>
-                  <p className="text-gray-600">{resource.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+                  <List sx={{ p: 0 }}>
+                    {service.features.map((feature, featureIndex) => (
+                      <ListItem key={featureIndex} sx={{ px: 0, py: 0.5 }}>
+                        <Typography sx={{ color: '#43e97b', mr: 1 }}>
+                          ✓
+                        </Typography>
+                        <ListItemText 
+                          primary={feature}
+                          sx={{
+                            '& .MuiTypography-root': {
+                              color: 'rgba(255, 255, 255, 0.9)',
+                              fontSize: '0.95rem'
+                            }
+                          }}
+                        />
+                      </ListItem>
+                    ))}
+                  </List>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Box>
 
-          <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-            <h3 className="text-lg font-medium text-gray-900 mb-2">
-              Important Disclaimer
-            </h3>
-            <p className="text-sm text-gray-600">
-              MagicMeds provides general health information and guidance. This
-              service is not a substitute for professional medical advice,
-              diagnosis, or treatment. Always seek the advice of your physician or
-              other qualified health provider with any questions you may have
-              regarding a medical condition.
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
+        <Box sx={{ mt: 8, textAlign: 'center' }}>
+          <Typography 
+            variant="h6"
+            sx={{
+              color: 'rgba(255, 255, 255, 0.9)',
+              fontStyle: 'italic'
+            }}
+          >
+            "Your health is our priority. We're here to support your wellness journey every step of the way."
+          </Typography>
+        </Box>
+      </Container>
+    </Box>
   );
 }

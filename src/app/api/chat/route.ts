@@ -14,7 +14,8 @@ const userInfoSchema = z.object({
 
 const requestSchema = z.object({
   message: z.string().min(1).max(1000),
-  userInfo: userInfoSchema.optional()
+  userInfo: userInfoSchema.optional(),
+  context: z.string().optional()
 });
 
 export async function POST(request: Request) {
@@ -22,7 +23,7 @@ export async function POST(request: Request) {
     // Validate request body
     const body = await request.json();
     const validatedData = requestSchema.parse(body);
-    const { message, userInfo } = validatedData;
+    const { message, userInfo, context } = validatedData;
 
     // Get the medicine database singleton instance
     const medicineDb = MedicineDatabase.getInstance();
@@ -49,33 +50,54 @@ export async function POST(request: Request) {
         })
       : [];
 
-    // Enhance the prompt with structured data
-    const enhancedMessage = {
-      userMessage: message,
-      userContext: {
-        ...userInfo,
-        timestamp: new Date().toISOString(),
-        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-      },
-      analysis: {
-        detectedSymptoms: mentionedSymptoms,
-        severityIndicators: mentionedSymptoms.some(s => 
-          ['severe', 'extreme', 'intense', 'unbearable'].some(indicator => 
-            message.toLowerCase().includes(indicator)
+    // Handle different contexts
+    let enhancedMessage;
+    
+    if (context === 'healthcare_support') {
+      // Support context - focus on platform help and general healthcare guidance
+      enhancedMessage = {
+        userMessage: message,
+        context: 'healthcare_support',
+        userContext: {
+          ...userInfo,
+          timestamp: new Date().toISOString(),
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        },
+        platformInfo: {
+          name: 'MagicMeds',
+          features: ['appointments', 'telehealth', 'prescriptions', 'chat support', 'medical records'],
+          supportTopics: ['booking appointments', 'video consultations', 'account issues', 'platform navigation', 'general healthcare questions']
+        }
+      };
+    } else {
+      // Default medical consultation context
+      enhancedMessage = {
+        userMessage: message,
+        userContext: {
+          ...userInfo,
+          timestamp: new Date().toISOString(),
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        },
+        analysis: {
+          detectedSymptoms: mentionedSymptoms,
+          severityIndicators: mentionedSymptoms.some(s => 
+            ['severe', 'extreme', 'intense', 'unbearable'].some(indicator => 
+              message.toLowerCase().includes(indicator)
+            )
           )
-        )
-      },
-      medicineOptions: relevantMedicines.map(med => ({
-        name: med.name,
-        description: med.description,
-        sideEffects: med.sideEffects,
-        dosageInfo: medicineDb.getDosageByAgeGroup(
-          med.name, 
-          userInfo?.ageGroup || 'adult'
-        ),
-        contraindications: med.contraindications
-      }))
-    };
+        },
+        medicineOptions: relevantMedicines.map(med => ({
+          name: med.name,
+          description: med.description,
+          sideEffects: med.sideEffects,
+          dosageInfo: medicineDb.getDosageByAgeGroup(
+            med.name, 
+            userInfo?.ageGroup || 'adult'
+          ),
+          contraindications: med.contraindications
+        }))
+      };
+    }
 
     try {
       const response = await getHealthAssistantResponse(JSON.stringify(enhancedMessage));
@@ -91,8 +113,9 @@ export async function POST(request: Request) {
         { 
           response,
           symptoms: mentionedSymptoms,
-          hasSevereSymptoms: enhancedMessage.analysis.severityIndicators,
-          timestamp: enhancedMessage.userContext.timestamp
+          hasSevereSymptoms: enhancedMessage.analysis?.severityIndicators || false,
+          timestamp: enhancedMessage.userContext.timestamp,
+          context: context || 'medical'
         }, 
         { 
           status: 200,

@@ -161,11 +161,26 @@ export default function AppointmentsPage() {
   });
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
-      <Box sx={{ mb: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Typography variant="h4" component="h1">
-          My Appointments
-        </Typography>
+    <Box sx={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #134e5e 0%, #71b280 50%, #4facfe 100%)',
+      py: 4
+    }}>
+      <Container maxWidth="lg">
+        <Box sx={{ mb: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Typography 
+            variant="h4" 
+            component="h1"
+            sx={{
+              color: '#fff',
+              fontWeight: 'bold',
+              background: 'linear-gradient(45deg, #43e97b, #00f2fe)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}
+          >
+            My Appointments
+          </Typography>
         <Button
           variant="contained"
           startIcon={<CalendarMonthIcon />}
@@ -331,6 +346,7 @@ export default function AppointmentsPage() {
           </Button>
         </DialogActions>
       </Dialog>
-    </Container>
+      </Container>
+    </Box>
   );
 }

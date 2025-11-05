@@ -132,83 +132,115 @@ export default function ArticlesPage() {
   }, []);
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
-      {/* Articles Section */}
-      <Typography variant="h4" component="h1" gutterBottom>
-        Health & Wellness Articles
-      </Typography>
-      <GridContainer>
-        {articles.map((article) => (
-          <GridItem key={article.id}>
-            <Card sx={{ p: 2, height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <Typography variant="h6" gutterBottom>
-                {article.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                {article.summary}
-              </Typography>
-              <Box sx={{ mt: 'auto' }}>
-                <Box sx={{ mb: 1 }}>
-                  {article.tags.map((tag) => (
-                    <Chip
-                      key={tag}
-                      label={tag}
-                      size="small"
-                      sx={{ mr: 0.5, mb: 0.5 }}
-                    />
-                  ))}
-                </Box>
-                <Typography variant="caption" color="text.secondary">
-                  {article.date} • {article.readTime} read
-                </Typography>
-              </Box>
-            </Card>
-          </GridItem>
-        ))}
-      </GridContainer>
+    <Box sx={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #134e5e 0%, #71b280 50%, #4facfe 100%)',
+      py: 6
+    }}>
+      <Container maxWidth="lg">
+        {/* Articles Section */}
+        <Typography 
+          variant="h4" 
+          component="h1" 
+          gutterBottom
+          sx={{
+            color: '#fff',
+            fontWeight: '700',
+            mb: 4,
+            background: 'linear-gradient(45deg, #43e97b, #00f2fe)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent'
+          }}
+        >
+          Health & Wellness Articles
+        </Typography>
 
-      {/* Reviews Section */}
-      <Typography variant="h4" component="h2" gutterBottom>
-        User Experiences
-      </Typography>
-      <ReviewsContainer>
-        {reviews.map((review) => (
-          <Box key={review.reviewId}>
-            <Card sx={{ p: 2 }}>
-              <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                <Avatar sx={{ bgcolor: 'primary.main', mr: 2 }}>
-                  {review.patientInitials}
-                </Avatar>
-                <Box>
-                  <Typography variant="subtitle1">
-                    {review.patientInitials} • Age: {review.age}
-                  </Typography>
-                  <Typography variant="caption" color="text.secondary">
-                    Condition: {review.condition}
+        <GridContainer>
+          {articles.map((article) => (
+            <GridItem key={article.id}>
+              <Card sx={{
+                p: 2,
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                color: '#fff'
+              }}>
+                <Typography variant="h6" gutterBottom sx={{ color: '#fff' }}>
+                  {article.title}
+                </Typography>
+                <Typography variant="body2" sx={{ mb: 2, color: 'rgba(255,255,255,0.8)' }}>
+                  {article.summary}
+                </Typography>
+                <Box sx={{ mt: 'auto' }}>
+                  <Box sx={{ mb: 1 }}>
+                    {article.tags.map((tag) => (
+                      <Chip
+                        key={tag}
+                        label={tag}
+                        size="small"
+                        sx={{ mr: 0.5, mb: 0.5, bgcolor: 'rgba(255,255,255,0.06)', color: '#eafaf1' }}
+                      />
+                    ))}
+                  </Box>
+                  <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.7)' }}>
+                    {article.date} • {article.readTime} read
                   </Typography>
                 </Box>
-              </Box>
-              <Rating value={review.rating} readOnly sx={{ mb: 1 }} />
-              <Typography variant="body1" paragraph>
-                {review.review}
-              </Typography>
-              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Typography variant="caption" color="text.secondary">
-                  {review.date} • {review.helpfulCount} found this helpful
+              </Card>
+            </GridItem>
+          ))}
+        </GridContainer>
+
+        {/* Reviews Section */}
+        <Typography 
+          variant="h4" 
+          component="h2" 
+          gutterBottom
+          sx={{ color: '#fff', fontWeight: 700, mt: 6, mb: 2 }}
+        >
+          User Experiences
+        </Typography>
+        <ReviewsContainer>
+          {reviews.map((review) => (
+            <Box key={review.reviewId}>
+              <Card sx={{ p: 2, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)', color: '#fff' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+                  <Avatar sx={{ bgcolor: 'secondary.main', mr: 2, color: '#fff' }}>
+                    {review.patientInitials}
+                  </Avatar>
+                  <Box>
+                    <Typography variant="subtitle1" sx={{ color: '#fff' }}>
+                      {review.patientInitials} • Age: {review.age}
+                    </Typography>
+                    <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.7)' }}>
+                      Condition: {review.condition}
+                    </Typography>
+                  </Box>
+                </Box>
+                <Rating value={review.rating} readOnly sx={{ mb: 1, color: '#43e97b' }} />
+                <Typography variant="body1" paragraph sx={{ color: 'rgba(255,255,255,0.9)' }}>
+                  {review.review}
                 </Typography>
-                {review.verifiedPurchase && (
-                  <Chip
-                    label="Verified User"
-                    size="small"
-                    color="primary"
-                    variant="outlined"
-                  />
-                )}
-              </Box>
-            </Card>
-          </Box>
-        ))}
-      </ReviewsContainer>
-    </Container>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.7)' }}>
+                    {review.date} • {review.helpfulCount} found this helpful
+                  </Typography>
+                  {review.verifiedPurchase && (
+                    <Chip
+                      label="Verified User"
+                      size="small"
+                      sx={{ borderColor: 'rgba(255,255,255,0.12)', color: '#fff' }}
+                      variant="outlined"
+                    />
+                  )}
+                </Box>
+              </Card>
+            </Box>
+          ))}
+        </ReviewsContainer>
+      </Container>
+    </Box>
   );
 }

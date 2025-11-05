@@ -7,11 +7,20 @@ const NavBar = () => {
   const pathname = usePathname();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
+    { name: 'About', path: '/' },
+    { name: 'Home', path: '/home' },
     { name: 'Services', path: '/services' },
     { name: 'Articles', path: '/articles' },
+    { name: 'Telehealth', path: '/telehealth' },
+    { name: 'Appointments', path: '/appointments' },
+    { name: 'Dashboard', path: '/dashboard' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Support', path: '/support' },
+  ];
+
+  const authItems = [
+    { name: 'Login', path: '/login' },
+    { name: 'Sign Up', path: '/signup' },
   ];
 
   return (
@@ -35,7 +44,7 @@ const NavBar = () => {
             <Link href="/" className="text-2xl font-bold text-white mr-8">
               MagicMeds
             </Link>
-            <div className="hidden md:flex md:space-x-6">
+            <div className="hidden md:flex md:space-x-6 md:items-center">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
@@ -49,6 +58,25 @@ const NavBar = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Auth buttons */}
+              <div className="flex items-center space-x-2 ml-4">
+                {authItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    href={item.path}
+                    className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                      pathname === item.path
+                        ? 'bg-white text-emerald-700'
+                        : item.name === 'Sign Up'
+                        ? 'bg-emerald-800 text-white hover:bg-emerald-900 border border-emerald-800'
+                        : 'text-white hover:bg-emerald-600 border border-white'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

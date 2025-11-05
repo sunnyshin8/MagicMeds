@@ -63,9 +63,30 @@ export default function SignUpPage() {
     setActiveStep((prevStep) => prevStep - 1);
   };
 
+  const validateStep = () => {
+    switch (activeStep) {
+      case 0:
+        return formData.email && formData.password && formData.confirmPassword && 
+               formData.password === formData.confirmPassword;
+      case 1:
+        return formData.firstName && formData.lastName && formData.dateOfBirth && formData.phone;
+      case 2:
+        return formData.agreeToTerms;
+      default:
+        return false;
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!validateStep()) {
+      setError('Please fill in all required fields correctly');
+      return;
+    }
+
     if (activeStep < steps.length - 1) {
+      setError('');
       handleNext();
       return;
     }
@@ -74,11 +95,23 @@ export default function SignUpPage() {
     setError('');
 
     try {
-      // TODO: Implement actual signup logic
-      await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate API call
+      // Basic validation
+      if (formData.password !== formData.confirmPassword) {
+        throw new Error('Passwords do not match');
+      }
+      
+      // Simulate signup API call
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      
+      // For demo purposes - save user data
+      localStorage.setItem('user', JSON.stringify({ 
+        email: formData.email, 
+        name: `${formData.firstName} ${formData.lastName}`,
+        loggedIn: true 
+      }));
       router.push('/dashboard');
     } catch (err) {
-      setError('Failed to create account. Please try again.');
+      setError(err instanceof Error ? err.message : 'Failed to create account. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -240,28 +273,56 @@ export default function SignUpPage() {
   };
 
   return (
-    <Container maxWidth="sm">
-      <Box
-        sx={{
-          minHeight: '80vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          py: 4,
-        }}
-      >
-        <Paper
-          elevation={0}
+    <Box sx={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #134e5e 0%, #71b280 50%, #4facfe 100%)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      p: 2
+    }}>
+      <Container maxWidth="sm">
+        <Box
           sx={{
-            p: 4,
-            border: theme => `1px solid ${theme.palette.divider}`,
-            borderRadius: 2,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
           }}
         >
-          <Typography variant="h4" component="h1" gutterBottom align="center">
+          <Paper
+            elevation={0}
+            sx={{
+              p: 4,
+              background: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(15px)',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+              borderRadius: '20px',
+              boxShadow: '0 15px 35px rgba(0, 0, 0, 0.1)',
+            }}
+          >
+          <Typography 
+            variant="h4" 
+            component="h1" 
+            gutterBottom 
+            align="center"
+            sx={{
+              color: '#fff',
+              fontWeight: 'bold',
+              background: 'linear-gradient(45deg, #43e97b, #00f2fe)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}
+          >
             Create Account
           </Typography>
-          <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 4 }}>
+          <Typography 
+            variant="body2" 
+            align="center" 
+            sx={{ 
+              mb: 4,
+              color: 'rgba(255, 255, 255, 0.8)'
+            }}
+          >
             Join MagicMeds for personalized healthcare assistance
           </Typography>
 
@@ -310,5 +371,6 @@ export default function SignUpPage() {
         </Paper>
       </Box>
     </Container>
+    </Box>
   );
 }
