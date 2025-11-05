@@ -468,12 +468,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Sunny Shin** - Lead Developer  
 - 🐙 GitHub: [@sunnyshin8](https://github.com/sunnyshin8)
-- 💼 LinkedIn: [Connect with Sunny](https://linkedin.com/in/sunnyshin8)
-- 📧 Email: contact@magicmeds.com
+- 💼 LinkedIn: [Connect with Hemal](linkedin.com/in/hemal-shingloo-a21023238/)
+- 📧 Email: shingloo55@gmail.com
 
-**Project Links**
-- 🌐 **Live Demo**: [https://magicmeds.vercel.app](https://magicmeds.vercel.app)
-- 📖 **Documentation**: [https://docs.magicmeds.com](https://docs.magicmeds.com)  
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/sunnyshin8/MagicMeds/issues)
 - 💡 **Feature Requests**: [GitHub Discussions](https://github.com/sunnyshin8/MagicMeds/discussions)
 
