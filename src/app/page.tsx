@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Box, Container, Typography, Button } from '@mui/material';
+import { Box, Container, Typography, Button, Card, CardContent } from '@mui/material';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import PsychologyIcon from '@mui/icons-material/Psychology';
@@ -10,89 +10,9 @@ import LanguageIcon from '@mui/icons-material/Language';
 import SpeedIcon from '@mui/icons-material/Speed';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 
 export default function AboutPage() {
-  // Animation styles for page elements
-  const animationStyles = `
-    @keyframes slideInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    
-    @keyframes scaleIn {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-    
-    .animate-slide-in-up {
-      animation: slideInUp 0.7s ease-out forwards;
-    }
-    
-    .animate-fade-in {
-      animation: fadeIn 0.7s ease-out forwards;
-    }
-    
-    .animate-scale-in {
-      animation: scaleIn 0.7s ease-out forwards;
-    }
-    
-    .hero-title {
-      animation: slideInUp 0.8s ease-out;
-    }
-    
-    .hero-subtitle {
-      animation: slideInUp 0.9s ease-out;
-    }
-    
-    .hero-description {
-      animation: slideInUp 1s ease-out;
-    }
-    
-    .hero-buttons {
-      animation: slideInUp 1.1s ease-out;
-    }
-    
-    .mission-section {
-      animation: fadeIn 0.8s ease-out;
-    }
-    
-    .feature-card {
-      animation: scaleIn 0.6s ease-out;
-    }
-    
-    .feature-card:nth-child(1) { animation-delay: 0.1s; }
-    .feature-card:nth-child(2) { animation-delay: 0.2s; }
-    .feature-card:nth-child(3) { animation-delay: 0.3s; }
-    .feature-card:nth-child(4) { animation-delay: 0.4s; }
-    .feature-card:nth-child(5) { animation-delay: 0.5s; }
-    .feature-card:nth-child(6) { animation-delay: 0.6s; }
-    
-    .cta-section {
-      animation: slideInUp 1.2s ease-out;
-    }
-  `;
-  
   const features = [
     {
       icon: PsychologyIcon,
@@ -129,6 +49,12 @@ export default function AboutPage() {
       title: '24/7 Instant Access',
       description: 'Round-the-clock healthcare support and emergency assistance whenever you need it.',
       gradient: 'linear-gradient(135deg, #71b280 0%, #134e5e 100%)'
+    },
+    {
+      icon: FamilyRestroomIcon,
+      title: 'Guardian Care Support',
+      description: 'Add up to 3 trusted guardians who can manage your healthcare when you\'re too sick to do so yourself.',
+      gradient: 'linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%)'
     }
   ];
 
@@ -137,11 +63,10 @@ export default function AboutPage() {
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0f2027 0%, #203a43 25%, #2c5364 50%, #4facfe 75%, #00f2fe 100%)',
     }}>
-      <style>{animationStyles}</style>
       {/* Hero Section */}
       <Container maxWidth="lg" sx={{ pt: 8, pb: 4 }}>
         <Box sx={{ textAlign: 'center', mb: 8 }}>
-          <Typography variant="h1" className="hero-title" sx={{
+          <Typography variant="h1" sx={{
             fontSize: { xs: '2.5rem', md: '4rem', lg: '5rem' },
             fontWeight: 'bold',
             background: 'linear-gradient(45deg, #fff 30%, #43e97b 90%)',
@@ -154,7 +79,7 @@ export default function AboutPage() {
             MagicMeds
           </Typography>
           
-          <Typography variant="h4" className="hero-subtitle" sx={{
+          <Typography variant="h4" sx={{
             color: 'rgba(255,255,255,0.9)',
             mb: 4,
             fontWeight: 300,
@@ -163,7 +88,7 @@ export default function AboutPage() {
             🚀 Revolutionizing Healthcare with AI Magic
           </Typography>
 
-          <Typography variant="h6" className="hero-description" sx={{
+          <Typography variant="h6" sx={{
             color: 'rgba(255,255,255,0.8)',
             mb: 6,
             maxWidth: '800px',
@@ -175,7 +100,7 @@ export default function AboutPage() {
             Accessible to Every Indian, Everywhere, Anytime 💚"
           </Typography>
 
-          <Box className="hero-buttons" sx={{ display: 'flex', gap: 3, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Box sx={{ display: 'flex', gap: 3, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Button
               component={Link}
               href="/signup"
@@ -224,13 +149,37 @@ export default function AboutPage() {
             >
               Try Telehealth Now
             </Button>
+
+            <Button
+              component={Link}
+              href="/clinician"
+              variant="contained"
+              size="large"
+              sx={{
+                background: 'linear-gradient(45deg, #4facfe, #00f2fe)',
+                color: '#fff',
+                px: 4,
+                py: 2,
+                fontSize: '1.1rem',
+                borderRadius: '50px',
+                boxShadow: '0 8px 25px rgba(79, 172, 254, 0.4)',
+                '&:hover': {
+                  background: 'linear-gradient(45deg, #00f2fe, #4facfe)',
+                  boxShadow: '0 12px 35px rgba(79, 172, 254, 0.6)',
+                  transform: 'translateY(-2px)'
+                },
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Clinician Portal
+            </Button>
           </Box>
         </Box>
       </Container>
 
       {/* Mission Statement */}
       <Container maxWidth="lg" sx={{ py: 6 }}>
-        <Box className="mission-section" sx={{
+        <Box sx={{
           background: 'rgba(255, 255, 255, 0.05)',
           backdropFilter: 'blur(15px)',
           borderRadius: '25px',
@@ -285,7 +234,7 @@ export default function AboutPage() {
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
-              <Box key={index} className="feature-card">
+              <Box key={index}>
                 <Box sx={{
                   background: 'rgba(255, 255, 255, 0.05)',
                   backdropFilter: 'blur(10px)',
@@ -336,9 +285,98 @@ export default function AboutPage() {
         </Box>
       </Container>
 
+      {/* Guardian Care Highlight Section */}
+      <Container maxWidth="lg" sx={{ py: 6 }}>
+        <Card sx={{
+          background: 'linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 165, 0, 0.1) 100%)',
+          backdropFilter: 'blur(15px)',
+          borderRadius: '25px',
+          border: '2px solid rgba(255, 165, 0, 0.3)',
+          p: 4,
+          boxShadow: '0 15px 35px rgba(255, 107, 107, 0.2)'
+        }}>
+          <CardContent>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 3 }}>
+              <FamilyRestroomIcon sx={{ fontSize: '3rem', color: '#ff6b6b', mr: 2 }} />
+              <Typography variant="h3" sx={{
+                fontWeight: 'bold',
+                background: 'linear-gradient(45deg, #ff6b6b 30%, #ffa500 90%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}>
+                Guardian Care Support
+              </Typography>
+            </Box>
+
+            <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1fr 1fr' }, gap: 4, alignItems: 'center' }}>
+              <Box>
+                <Typography variant="h5" sx={{ color: 'white', mb: 3, fontWeight: 'bold' }}>
+                  🤒 Too Sick to Manage Your Healthcare?
+                </Typography>
+                <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.9)', mb: 3, fontSize: '1.1rem' }}>
+                  When you're critically ill, hospitalized, or unable to manage your healthcare independently, 
+                  our Guardian Care feature ensures your medical needs are never neglected.
+                </Typography>
+                <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.9)', mb: 3 }}>
+                  <strong>Add up to 3 trusted guardians</strong> who can access your MagicMeds account, 
+                  view your medical records, communicate with doctors, and make healthcare decisions on your behalf.
+                </Typography>
+              </Box>
+
+              <Box>
+                <Card sx={{ 
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)' 
+                }}>
+                  <CardContent>
+                    <Typography variant="h6" sx={{ color: '#ffa500', mb: 2, fontWeight: 'bold' }}>
+                      👨‍👩‍👧‍👦 Perfect for:
+                    </Typography>
+                    <Box component="ul" sx={{ color: 'white', pl: 2 }}>
+                      <li style={{ marginBottom: '8px' }}>Elderly patients with chronic conditions</li>
+                      <li style={{ marginBottom: '8px' }}>Patients undergoing major surgery</li>
+                      <li style={{ marginBottom: '8px' }}>Emergency medical situations</li>
+                      <li style={{ marginBottom: '8px' }}>Mental health crises</li>
+                      <li style={{ marginBottom: '8px' }}>Family members traveling frequently</li>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Box>
+            </Box>
+
+            <Box sx={{ textAlign: 'center', mt: 4 }}>
+              <Button
+                component={Link}
+                href="/guardians"
+                variant="contained"
+                size="large"
+                startIcon={<FamilyRestroomIcon />}
+                sx={{
+                  background: 'linear-gradient(45deg, #ff6b6b, #ffa500)',
+                  color: 'white',
+                  px: 4,
+                  py: 2,
+                  fontSize: '1.1rem',
+                  fontWeight: 'bold',
+                  boxShadow: '0 8px 25px rgba(255, 107, 107, 0.4)',
+                  '&:hover': {
+                    background: 'linear-gradient(45deg, #ffa500, #ff6b6b)',
+                    boxShadow: '0 12px 30px rgba(255, 107, 107, 0.6)',
+                    transform: 'translateY(-2px)'
+                  }
+                }}
+              >
+                Manage Your Guardians
+              </Button>
+            </Box>
+          </CardContent>
+        </Card>
+      </Container>
+
       {/* Call to Action */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Box className="cta-section" sx={{
+        <Box sx={{
           background: 'linear-gradient(135deg, rgba(67, 233, 123, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%)',
           backdropFilter: 'blur(15px)',
           borderRadius: '25px',

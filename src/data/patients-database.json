@@ -1,0 +1,6498 @@
+{
+  "patients": [
+    {
+      "patientId": "PAT-001",
+      "personalInfo": {
+        "firstName": "Rajesh",
+        "lastName": "Kumar Sharma",
+        "age": 58,
+        "gender": "Male",
+        "dateOfBirth": "1967-03-15",
+        "bloodType": "B+",
+        "phone": "+91-9876543210",
+        "email": "rajesh.sharma@email.com",
+        "emergencyContact": {
+          "name": "Sunita Sharma",
+          "relationship": "Spouse",
+          "phone": "+91-9876543211"
+        }
+      },
+      "address": {
+        "street": "123, MG Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Cardiac Arrest",
+            "diagnosedDate": "2023-08-15",
+            "severity": "Critical",
+            "status": "Recovered",
+            "notes": "Survived massive heart attack, underwent angioplasty"
+          },
+          {
+            "condition": "Hypertension",
+            "diagnosedDate": "2020-01-10",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "On medication, regular monitoring required"
+          }
+        ],
+        "allergies": ["Penicillin", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Metoprolol",
+            "dosage": "50mg",
+            "frequency": "Twice daily",
+            "startDate": "2023-08-20"
+          },
+          {
+            "name": "Aspirin",
+            "dosage": "75mg",
+            "frequency": "Once daily",
+            "startDate": "2023-08-20"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Star Health Insurance",
+        "policyNumber": "SH123456789",
+        "validUntil": "2026-03-15"
+      }
+    },
+    {
+      "patientId": "PAT-002",
+      "personalInfo": {
+        "firstName": "Priya",
+        "lastName": "Gupta",
+        "age": 45,
+        "gender": "Female",
+        "dateOfBirth": "1980-07-22",
+        "bloodType": "A+",
+        "phone": "+91-8765432109",
+        "email": "priya.gupta@email.com",
+        "emergencyContact": {
+          "name": "Amit Gupta",
+          "relationship": "Spouse",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "456, Sector 15",
+        "city": "Gurgaon",
+        "state": "Haryana",
+        "pincode": "122001",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Stage 2 Skin Cancer (Melanoma)",
+            "diagnosedDate": "2024-03-10",
+            "severity": "Moderate",
+            "status": "Under Treatment",
+            "notes": "Undergoing chemotherapy, good response to treatment"
+          },
+          {
+            "condition": "Diabetes Type 2",
+            "diagnosedDate": "2019-05-15",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Well controlled with medication and diet"
+          }
+        ],
+        "allergies": ["Latex", "Aspirin"],
+        "currentMedications": [
+          {
+            "name": "Metformin",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2019-06-01"
+          },
+          {
+            "name": "Pembrolizumab",
+            "dosage": "200mg",
+            "frequency": "Every 3 weeks",
+            "startDate": "2024-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "HDFC Ergo Health",
+        "policyNumber": "HE987654321",
+        "validUntil": "2026-07-22"
+      }
+    },
+    {
+      "patientId": "PAT-003",
+      "personalInfo": {
+        "firstName": "Subhash",
+        "lastName": "Patel",
+        "age": 72,
+        "gender": "Male",
+        "dateOfBirth": "1953-01-23",
+        "bloodType": "O+",
+        "phone": "+91-7654321098",
+        "email": "subhash.patel@email.com",
+        "emergencyContact": {
+          "name": "Rekha S Patel",
+          "relationship": "Daughter",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "789, Park Street",
+        "city": "Surat",
+        "state": "Gujarat",
+        "pincode": "395006----------------------------------------------------------------",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Alzheimer's Disease",
+            "diagnosedDate": "2022-09-05",
+            "severity": "Moderate",
+            "status": "Progressive",
+            "notes": "Early to moderate stage, requires constant supervision"
+          },
+          {
+            "condition": "Osteoarthritis",
+            "diagnosedDate": "2018-11-12",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Affects knees and hips, mobility issues"
+          }
+        ],
+        "allergies": ["NSAIDs", "Codeine"],
+        "currentMedications": [
+          {
+            "name": "Donepezil",
+            "dosage": "10mg",
+            "frequency": "Once daily",
+            "startDate": "2022-09-15"
+          },
+          {
+            "name": "Glucosamine",
+            "dosage": "1500mg",
+            "frequency": "Once daily",
+            "startDate": "2019-01-10"
+          }
+        ],
+        "lastVisit": "2025-11-15",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "LIC Health Plus",
+        "policyNumber": "LIC456789123",
+        "validUntil": "2026-01-23"
+      }
+    },
+    {
+      "patientId": "PAT-004",
+      "personalInfo": {
+        "firstName": "Anita",
+        "lastName": "Singh",
+        "age": 38,
+        "gender": "Female",
+        "dateOfBirth": "1987-12-08",
+        "bloodType": "AB+",
+        "phone": "+91-6543210987",
+        "email": "anita.singh@email.com",
+        "emergencyContact": {
+          "name": "Vikram Singh",
+          "relationship": "Spouse",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "321, Civil Lines",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110054",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Stroke (Ischemic)",
+            "diagnosedDate": "2024-06-20",
+            "severity": "Severe",
+            "status": "Recovering",
+            "notes": "Left-side weakness, undergoing physiotherapy"
+          },
+          {
+            "condition": "Migraine",
+            "diagnosedDate": "2015-03-10",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Chronic migraines, triggers identified"
+          }
+        ],
+        "allergies": ["Sulfa drugs", "Chocolate"],
+        "currentMedications": [
+          {
+            "name": "Clopidogrel",
+            "dosage": "75mg",
+            "frequency": "Once daily",
+            "startDate": "2024-06-25"
+          },
+          {
+            "name": "Sumatriptan",
+            "dosage": "50mg",
+            "frequency": "As needed",
+            "startDate": "2015-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Max Bupa Health",
+        "policyNumber": "MB789123456",
+        "validUntil": "2026-12-08"
+      }
+    },
+    {
+      "patientId": "PAT-005",
+      "personalInfo": {
+        "firstName": "Mohammed",
+        "lastName": "Abdul Rahman",
+        "age": 55,
+        "gender": "Male",
+        "dateOfBirth": "1970-04-17",
+        "bloodType": "B-",
+        "phone": "+91-5432109876",
+        "email": "mohammed.rahman@email.com",
+        "emergencyContact": {
+          "name": "Fatima Rahman",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "567, Charminar Road",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500002",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Kidney Failure (Stage 4 CKD)",
+            "diagnosedDate": "2023-01-15",
+            "severity": "Severe",
+            "status": "On Dialysis",
+            "notes": "Requires dialysis 3 times per week, awaiting transplant"
+          },
+          {
+            "condition": "Diabetic Nephropathy",
+            "diagnosedDate": "2021-08-10",
+            "severity": "Severe",
+            "status": "Progressive",
+            "notes": "Diabetes-related kidney damage"
+          }
+        ],
+        "allergies": ["Iodine contrast", "Morphine"],
+        "currentMedications": [
+          {
+            "name": "Erythropoietin",
+            "dosage": "4000 units",
+            "frequency": "Weekly",
+            "startDate": "2023-02-01"
+          },
+          {
+            "name": "Calcium carbonate",
+            "dosage": "500mg",
+            "frequency": "Three times daily",
+            "startDate": "2023-01-20"
+          }
+        ],
+        "lastVisit": "2025-11-23",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Apollo Munich Health",
+        "policyNumber": "AM321654987",
+        "validUntil": "2026-04-17"
+      }
+    },
+    {
+      "patientId": "PAT-006",
+      "personalInfo": {
+        "firstName": "Lakshmi",
+        "lastName": "Venkatesh",
+        "age": 42,
+        "gender": "Female",
+        "dateOfBirth": "1983-09-25",
+        "bloodType": "A-",
+        "phone": "+91-4321098765",
+        "email": "lakshmi.venkatesh@email.com",
+        "emergencyContact": {
+          "name": "Venkatesh Rao",
+          "relationship": "Spouse",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "890, Brigade Road",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560025",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Breast Cancer (Stage 3)",
+            "diagnosedDate": "2023-05-12",
+            "severity": "Severe",
+            "status": "In Remission",
+            "notes": "Completed chemotherapy and radiation, regular monitoring"
+          },
+          {
+            "condition": "Anxiety Disorder",
+            "diagnosedDate": "2020-11-08",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Post-cancer diagnosis anxiety, under counseling"
+          }
+        ],
+        "allergies": ["Taxanes", "Nuts"],
+        "currentMedications": [
+          {
+            "name": "Tamoxifen",
+            "dosage": "20mg",
+            "frequency": "Once daily",
+            "startDate": "2024-01-15"
+          },
+          {
+            "name": "Sertraline",
+            "dosage": "50mg",
+            "frequency": "Once daily",
+            "startDate": "2020-11-15"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "ICICI Lombard Health",
+        "policyNumber": "IL654987321",
+        "validUntil": "2026-09-25"
+      }
+    },
+    {
+      "patientId": "PAT-007",
+      "personalInfo": {
+        "firstName": "Arjun",
+        "lastName": "Patel",
+        "age": 29,
+        "gender": "Male",
+        "dateOfBirth": "1996-06-14",
+        "bloodType": "O-",
+        "phone": "+91-3210987654",
+        "email": "arjun.patel@email.com",
+        "emergencyContact": {
+          "name": "Kiran Patel",
+          "relationship": "Mother",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "234, Ashram Road",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "pincode": "380009",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Leukemia (Acute Lymphoblastic)",
+            "diagnosedDate": "2024-02-28",
+            "severity": "Severe",
+            "status": "Under Treatment",
+            "notes": "Currently undergoing intensive chemotherapy protocol"
+          },
+          {
+            "condition": "Asthma",
+            "diagnosedDate": "2010-04-05",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Well-controlled with inhalers"
+          }
+        ],
+        "allergies": ["Pollen", "Dust mites"],
+        "currentMedications": [
+          {
+            "name": "Vincristine",
+            "dosage": "1.4mg/m²",
+            "frequency": "Weekly",
+            "startDate": "2024-03-10"
+          },
+          {
+            "name": "Salbutamol",
+            "dosage": "100mcg",
+            "frequency": "As needed",
+            "startDate": "2010-05-01"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Bajaj Allianz Health",
+        "policyNumber": "BA987321654",
+        "validUntil": "2026-06-14"
+      }
+    },
+    {
+      "patientId": "PAT-008",
+      "personalInfo": {
+        "firstName": "Meera",
+        "lastName": "Nair",
+        "age": 67,
+        "gender": "Female",
+        "dateOfBirth": "1958-11-30",
+        "bloodType": "AB-",
+        "phone": "+91-2109876543",
+        "email": "meera.nair@email.com",
+        "emergencyContact": {
+          "name": "Ravi Nair",
+          "relationship": "Son",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "678, Marine Drive",
+        "city": "Kochi",
+        "state": "Kerala",
+        "pincode": "682011",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Parkinson's Disease",
+            "diagnosedDate": "2021-03-22",
+            "severity": "Moderate",
+            "status": "Progressive",
+            "notes": "Tremor and rigidity, responds well to medication"
+          },
+          {
+            "condition": "Osteoporosis",
+            "diagnosedDate": "2019-08-17",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Multiple fracture risk, on bone-strengthening medication"
+          }
+        ],
+        "allergies": ["Erythromycin", "Eggs"],
+        "currentMedications": [
+          {
+            "name": "Levodopa/Carbidopa",
+            "dosage": "25/100mg",
+            "frequency": "Four times daily",
+            "startDate": "2021-04-01"
+          },
+          {
+            "name": "Alendronate",
+            "dosage": "70mg",
+            "frequency": "Weekly",
+            "startDate": "2019-09-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "United India Insurance",
+        "policyNumber": "UI123789456",
+        "validUntil": "2026-11-30"
+      }
+    },
+    {
+      "patientId": "PAT-009",
+      "personalInfo": {
+        "firstName": "Suresh",
+        "lastName": "Reddy",
+        "age": 51,
+        "gender": "Male",
+        "dateOfBirth": "1974-02-11",
+        "bloodType": "B+",
+        "phone": "+91-1098765432",
+        "email": "suresh.reddy@email.com",
+        "emergencyContact": {
+          "name": "Padmaja Reddy",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "345, Banjara Hills",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500034",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Liver Cirrhosis",
+            "diagnosedDate": "2022-07-18",
+            "severity": "Severe",
+            "status": "Stable",
+            "notes": "Alcohol-related cirrhosis, abstinent for 2 years"
+          },
+          {
+            "condition": "Portal Hypertension",
+            "diagnosedDate": "2023-01-05",
+            "severity": "Moderate",
+            "status": "Monitored",
+            "notes": "Secondary to cirrhosis, regular endoscopic screening"
+          }
+        ],
+        "allergies": ["Acetaminophen", "Alcohol"],
+        "currentMedications": [
+          {
+            "name": "Propranolol",
+            "dosage": "40mg",
+            "frequency": "Twice daily",
+            "startDate": "2023-01-10"
+          },
+          {
+            "name": "Spironolactone",
+            "dosage": "100mg",
+            "frequency": "Once daily",
+            "startDate": "2022-08-01"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Oriental Insurance",
+        "policyNumber": "OI789456123",
+        "validUntil": "2026-02-11"
+      }
+    },
+    {
+      "patientId": "PAT-010",
+      "personalInfo": {
+        "firstName": "Deepika",
+        "lastName": "Iyer",
+        "age": 34,
+        "gender": "Female",
+        "dateOfBirth": "1991-05-03",
+        "bloodType": "A+",
+        "phone": "+91-0987654321",
+        "email": "deepika.iyer@email.com",
+        "emergencyContact": {
+          "name": "Raghavan Iyer",
+          "relationship": "Father",
+          "phone": "+91-0987654320"
+        }
+      },
+      "address": {
+        "street": "567, T. Nagar",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pincode": "600017",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Multiple Sclerosis",
+            "diagnosedDate": "2023-09-14",
+            "severity": "Moderate",
+            "status": "Under Treatment",
+            "notes": "Relapsing-remitting MS, good response to treatment"
+          },
+          {
+            "condition": "Depression",
+            "diagnosedDate": "2022-03-20",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Post-diagnosis depression, under psychiatric care"
+          }
+        ],
+        "allergies": ["Interferon", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Fingolimod",
+            "dosage": "0.5mg",
+            "frequency": "Once daily",
+            "startDate": "2023-10-01"
+          },
+          {
+            "name": "Escitalopram",
+            "dosage": "10mg",
+            "frequency": "Once daily",
+            "startDate": "2022-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "New India Assurance",
+        "policyNumber": "NI456123789",
+        "validUntil": "2026-05-03"
+      }
+    },
+    {
+      "patientId": "PAT-011",
+      "personalInfo": {
+        "firstName": "Ravi",
+        "lastName": "Agarwal",
+        "age": 63,
+        "gender": "Male",
+        "dateOfBirth": "1962-08-27",
+        "bloodType": "O+",
+        "phone": "+91-9876543211",
+        "email": "ravi.agarwal@email.com",
+        "emergencyContact": {
+          "name": "Sunita Agarwal",
+          "relationship": "Spouse",
+          "phone": "+91-9876543212"
+        }
+      },
+      "address": {
+        "street": "112, Connaught Place",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110001",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Prostate Cancer (Stage 2)",
+            "diagnosedDate": "2024-04-15",
+            "severity": "Moderate",
+            "status": "Under Treatment",
+            "notes": "Underwent prostatectomy, on hormone therapy"
+          },
+          {
+            "condition": "Benign Prostatic Hyperplasia",
+            "diagnosedDate": "2020-06-10",
+            "severity": "Mild",
+            "status": "Resolved",
+            "notes": "Resolved after prostatectomy"
+          }
+        ],
+        "allergies": ["Fluoroquinolones", "Soy"],
+        "currentMedications": [
+          {
+            "name": "Leuprolide",
+            "dosage": "22.5mg",
+            "frequency": "Every 3 months",
+            "startDate": "2024-05-01"
+          },
+          {
+            "name": "Bicalutamide",
+            "dosage": "50mg",
+            "frequency": "Once daily",
+            "startDate": "2024-05-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "TATA AIG Health",
+        "policyNumber": "TA987654321",
+        "validUntil": "2026-08-27"
+      }
+    },
+    {
+      "patientId": "PAT-012",
+      "personalInfo": {
+        "firstName": "Kavitha",
+        "lastName": "Menon",
+        "age": 48,
+        "gender": "Female",
+        "dateOfBirth": "1977-12-19",
+        "bloodType": "B-",
+        "phone": "+91-8765432110",
+        "email": "kavitha.menon@email.com",
+        "emergencyContact": {
+          "name": "Ajay Menon",
+          "relationship": "Spouse",
+          "phone": "+91-8765432111"
+        }
+      },
+      "address": {
+        "street": "223, Residency Road",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560025",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Rheumatoid Arthritis",
+            "diagnosedDate": "2019-02-28",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Joint deformity in hands, responds well to DMARDs"
+          },
+          {
+            "condition": "Fibromyalgia",
+            "diagnosedDate": "2021-11-12",
+            "severity": "Moderate",
+            "status": "Chronic",
+            "notes": "Widespread pain syndrome, lifestyle modifications"
+          }
+        ],
+        "allergies": ["Sulfa drugs", "Wheat gluten"],
+        "currentMedications": [
+          {
+            "name": "Methotrexate",
+            "dosage": "15mg",
+            "frequency": "Weekly",
+            "startDate": "2019-03-15"
+          },
+          {
+            "name": "Pregabalin",
+            "dosage": "150mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-12-01"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Care Health Insurance",
+        "policyNumber": "CH654321987",
+        "validUntil": "2026-12-19"
+      }
+    },
+    {
+      "patientId": "PAT-013",
+      "personalInfo": {
+        "firstName": "Ganesh",
+        "lastName": "Joshi",
+        "age": 39,
+        "gender": "Male",
+        "dateOfBirth": "1986-10-07",
+        "bloodType": "AB+",
+        "phone": "+91-7654321109",
+        "email": "ganesh.joshi@email.com",
+        "emergencyContact": {
+          "name": "Pooja Joshi",
+          "relationship": "Spouse",
+          "phone": "+91-7654321108"
+        }
+      },
+      "address": {
+        "street": "334, Shivaji Nagar",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411005",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Epilepsy",
+            "diagnosedDate": "2015-07-22",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Generalized tonic-clonic seizures, well-controlled with medication"
+          },
+          {
+            "condition": "Sleep Apnea",
+            "diagnosedDate": "2020-01-18",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Uses CPAP machine nightly"
+          }
+        ],
+        "allergies": ["Carbamazepine", "Latex"],
+        "currentMedications": [
+          {
+            "name": "Levetiracetam",
+            "dosage": "750mg",
+            "frequency": "Twice daily",
+            "startDate": "2015-08-01"
+          },
+          {
+            "name": "Modafinil",
+            "dosage": "200mg",
+            "frequency": "Once daily",
+            "startDate": "2020-02-01"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Religare Health Insurance",
+        "policyNumber": "RH321987654",
+        "validUntil": "2026-10-07"
+      }
+    },
+    {
+      "patientId": "PAT-014",
+      "personalInfo": {
+        "firstName": "Sita",
+        "lastName": "Devi",
+        "age": 61,
+        "gender": "Female",
+        "dateOfBirth": "1964-03-14",
+        "bloodType": "O-",
+        "phone": "+91-6543210198",
+        "email": "sita.devi@email.com",
+        "emergencyContact": {
+          "name": "Ram Kumar",
+          "relationship": "Son",
+          "phone": "+91-6543210197"
+        }
+      },
+      "address": {
+        "street": "445, Lajpat Nagar",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110024",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Chronic Obstructive Pulmonary Disease",
+            "diagnosedDate": "2020-09-30",
+            "severity": "Severe",
+            "status": "Progressive",
+            "notes": "Smoking history 30 pack-years, quit 5 years ago"
+          },
+          {
+            "condition": "Heart Failure",
+            "diagnosedDate": "2023-05-20",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Right heart failure secondary to COPD"
+          }
+        ],
+        "allergies": ["Beta-blockers", "Milk products"],
+        "currentMedications": [
+          {
+            "name": "Tiotropium",
+            "dosage": "18mcg",
+            "frequency": "Once daily",
+            "startDate": "2020-10-15"
+          },
+          {
+            "name": "Furosemide",
+            "dosage": "40mg",
+            "frequency": "Twice daily",
+            "startDate": "2023-06-01"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "National Insurance Company",
+        "policyNumber": "NIC987321456",
+        "validUntil": "2026-03-14"
+      }
+    },
+    {
+      "patientId": "PAT-015",
+      "personalInfo": {
+        "firstName": "Karthik",
+        "lastName": "Subramanian",
+        "age": 26,
+        "gender": "Male",
+        "dateOfBirth": "1999-01-21",
+        "bloodType": "A-",
+        "phone": "+91-5432109876",
+        "email": "karthik.subramanian@email.com",
+        "emergencyContact": {
+          "name": "Lakshmi Subramanian",
+          "relationship": "Mother",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "556, Anna Nagar",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pincode": "600040",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Type 1 Diabetes Mellitus",
+            "diagnosedDate": "2010-11-05",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Well-controlled with insulin pump therapy"
+          },
+          {
+            "condition": "Diabetic Retinopathy",
+            "diagnosedDate": "2022-08-18",
+            "severity": "Mild",
+            "status": "Monitored",
+            "notes": "Early stage, requires annual screening"
+          }
+        ],
+        "allergies": ["Bee stings", "Peanuts"],
+        "currentMedications": [
+          {
+            "name": "Insulin Aspart",
+            "dosage": "Variable",
+            "frequency": "With meals",
+            "startDate": "2010-12-01"
+          },
+          {
+            "name": "Insulin Glargine",
+            "dosage": "24 units",
+            "frequency": "Once daily",
+            "startDate": "2010-12-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Future Generali Health",
+        "policyNumber": "FG456789321",
+        "validUntil": "2026-01-21"
+      }
+    },
+    {
+      "patientId": "PAT-016",
+      "personalInfo": {
+        "firstName": "Indira",
+        "lastName": "Gandhi",
+        "age": 73,
+        "gender": "Female",
+        "dateOfBirth": "1952-11-19",
+        "bloodType": "B+",
+        "phone": "+91-4321098765",
+        "email": "indira.gandhi@email.com",
+        "emergencyContact": {
+          "name": "Rajiv Gandhi",
+          "relationship": "Son",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "667, Safdarjung Road",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110003",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Atrial Fibrillation",
+            "diagnosedDate": "2021-04-12",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Permanent AF, anticoagulated, rate controlled"
+          },
+          {
+            "condition": "Osteoarthritis",
+            "diagnosedDate": "2018-06-25",
+            "severity": "Severe",
+            "status": "Managed",
+            "notes": "Bilateral knee replacement done in 2020"
+          }
+        ],
+        "allergies": ["Warfarin", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Apixaban",
+            "dosage": "5mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-04-20"
+          },
+          {
+            "name": "Metoprolol",
+            "dosage": "50mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-04-20"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Cholamandalam MS Health",
+        "policyNumber": "CH789654123",
+        "validUntil": "2026-11-19"
+      }
+    },
+    {
+      "patientId": "PAT-017",
+      "personalInfo": {
+        "firstName": "Vinay",
+        "lastName": "Kumar",
+        "age": 44,
+        "gender": "Male",
+        "dateOfBirth": "1981-07-08",
+        "bloodType": "AB-",
+        "phone": "+91-3210987654",
+        "email": "vinay.kumar@email.com",
+        "emergencyContact": {
+          "name": "Priya Kumar",
+          "relationship": "Spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "778, Koramangala",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560034",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Bipolar Disorder",
+            "diagnosedDate": "2018-03-15",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Type I bipolar, well-stabilized on mood stabilizers"
+          },
+          {
+            "condition": "Hypothyroidism",
+            "diagnosedDate": "2016-09-22",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Autoimmune thyroiditis, stable on replacement therapy"
+          }
+        ],
+        "allergies": ["Lithium", "Iodine"],
+        "currentMedications": [
+          {
+            "name": "Valproic acid",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2018-04-01"
+          },
+          {
+            "name": "Levothyroxine",
+            "dosage": "100mcg",
+            "frequency": "Once daily",
+            "startDate": "2016-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Digit General Insurance",
+        "policyNumber": "DI123456789",
+        "validUntil": "2026-07-08"
+      }
+    },
+    {
+      "patientId": "PAT-018",
+      "personalInfo": {
+        "firstName": "Shanti",
+        "lastName": "Kumari",
+        "age": 56,
+        "gender": "Female",
+        "dateOfBirth": "1969-04-30",
+        "bloodType": "O+",
+        "phone": "+91-2109876543",
+        "email": "shanti.kumari@email.com",
+        "emergencyContact": {
+          "name": "Mohan Kumari",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "889, Rajouri Garden",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110027",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Systemic Lupus Erythematosus",
+            "diagnosedDate": "2020-12-03",
+            "severity": "Moderate",
+            "status": "Flare-prone",
+            "notes": "Multi-organ involvement, requires immunosuppression"
+          },
+          {
+            "condition": "Lupus Nephritis",
+            "diagnosedDate": "2021-07-15",
+            "severity": "Severe",
+            "status": "Stable",
+            "notes": "Class IV nephritis, responded to treatment"
+          }
+        ],
+        "allergies": ["Sulfonamides", "Sun exposure"],
+        "currentMedications": [
+          {
+            "name": "Hydroxychloroquine",
+            "dosage": "400mg",
+            "frequency": "Once daily",
+            "startDate": "2020-12-15"
+          },
+          {
+            "name": "Mycophenolate",
+            "dosage": "1000mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-08-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Go Digit General Insurance",
+        "policyNumber": "GD987123456",
+        "validUntil": "2026-04-30"
+      }
+    },
+    {
+      "patientId": "PAT-019",
+      "personalInfo": {
+        "firstName": "Ashok",
+        "lastName": "Mehta",
+        "age": 49,
+        "gender": "Male",
+        "dateOfBirth": "1976-08-16",
+        "bloodType": "A+",
+        "phone": "+91-1098765432",
+        "email": "ashok.mehta@email.com",
+        "emergencyContact": {
+          "name": "Neeta Mehta",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "990, Worli Sea Face",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400030",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Coronary Artery Disease",
+            "diagnosedDate": "2023-02-20",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Triple vessel disease, underwent CABG surgery"
+          },
+          {
+            "condition": "Dyslipidemia",
+            "diagnosedDate": "2020-05-10",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "High cholesterol, responds well to statins"
+          }
+        ],
+        "allergies": ["Clopidogrel", "Contrast dye"],
+        "currentMedications": [
+          {
+            "name": "Atorvastatin",
+            "dosage": "80mg",
+            "frequency": "Once daily",
+            "startDate": "2020-05-20"
+          },
+          {
+            "name": "Aspirin",
+            "dosage": "75mg",
+            "frequency": "Once daily",
+            "startDate": "2023-03-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "SBI General Insurance",
+        "policyNumber": "SBI654789123",
+        "validUntil": "2026-08-16"
+      }
+    },
+    {
+      "patientId": "PAT-020",
+      "personalInfo": {
+        "firstName": "Gayathri",
+        "lastName": "Balakrishnan",
+        "age": 35,
+        "gender": "Female",
+        "dateOfBirth": "1990-12-25",
+        "bloodType": "B-",
+        "phone": "+91-0987654321",
+        "email": "gayathri.balakrishnan@email.com",
+        "emergencyContact": {
+          "name": "Balakrishnan Iyer",
+          "relationship": "Spouse",
+          "phone": "+91-0987654320"
+        }
+      },
+      "address": {
+        "street": "101, Adyar",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pincode": "600020",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Crohn's Disease",
+            "diagnosedDate": "2019-06-12",
+            "severity": "Moderate",
+            "status": "In Remission",
+            "notes": "Inflammatory bowel disease, well-controlled with biologics"
+          },
+          {
+            "condition": "Iron Deficiency Anemia",
+            "diagnosedDate": "2020-02-08",
+            "severity": "Mild",
+            "status": "Resolved",
+            "notes": "Secondary to GI blood loss, resolved with treatment"
+          }
+        ],
+        "allergies": ["Aspirin", "NSAIDs"],
+        "currentMedications": [
+          {
+            "name": "Adalimumab",
+            "dosage": "40mg",
+            "frequency": "Every 2 weeks",
+            "startDate": "2019-07-15"
+          },
+          {
+            "name": "Folic acid",
+            "dosage": "5mg",
+            "frequency": "Once daily",
+            "startDate": "2019-07-15"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Liberty General Insurance",
+        "policyNumber": "LG321654987",
+        "validUntil": "2026-12-25"
+      }
+    },
+    {
+      "patientId": "PAT-021",
+      "personalInfo": {
+        "firstName": "Ramesh",
+        "lastName": "Chandra",
+        "age": 68,
+        "gender": "Male",
+        "dateOfBirth": "1957-05-12",
+        "bloodType": "O+",
+        "phone": "+91-9876543220",
+        "email": "ramesh.chandra@email.com",
+        "emergencyContact": {
+          "name": "Kamala Chandra",
+          "relationship": "Spouse",
+          "phone": "+91-9876543221"
+        }
+      },
+      "address": {
+        "street": "212, Salt Lake",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "pincode": "700064",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Chronic Kidney Disease (Stage 5)",
+            "diagnosedDate": "2022-11-08",
+            "severity": "Critical",
+            "status": "On Transplant List",
+            "notes": "End-stage renal disease, on hemodialysis"
+          },
+          {
+            "condition": "Secondary Hyperparathyroidism",
+            "diagnosedDate": "2023-03-15",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Due to CKD, on phosphate binders"
+          }
+        ],
+        "allergies": ["ACE inhibitors", "Gadolinium"],
+        "currentMedications": [
+          {
+            "name": "Sevelamer",
+            "dosage": "800mg",
+            "frequency": "Three times daily with meals",
+            "startDate": "2023-03-20"
+          },
+          {
+            "name": "Calcitriol",
+            "dosage": "0.25mcg",
+            "frequency": "Once daily",
+            "startDate": "2023-03-20"
+          }
+        ],
+        "lastVisit": "2025-11-23",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "ICICI Lombard Health",
+        "policyNumber": "IL789123456",
+        "validUntil": "2026-05-12"
+      }
+    },
+    {
+      "patientId": "PAT-022",
+      "personalInfo": {
+        "firstName": "Sunita",
+        "lastName": "Rao",
+        "age": 41,
+        "gender": "Female",
+        "dateOfBirth": "1984-09-18",
+        "bloodType": "A-",
+        "phone": "+91-8765432119",
+        "email": "sunita.rao@email.com",
+        "emergencyContact": {
+          "name": "Prakash Rao",
+          "relationship": "Spouse",
+          "phone": "+91-8765432118"
+        }
+      },
+      "address": {
+        "street": "323, Jayanagar",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560041",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Thyroid Cancer (Papillary)",
+            "diagnosedDate": "2024-01-22",
+            "severity": "Moderate",
+            "status": "Post-Surgery",
+            "notes": "Total thyroidectomy completed, on suppressive therapy"
+          },
+          {
+            "condition": "Graves' Disease",
+            "diagnosedDate": "2021-12-10",
+            "severity": "Moderate",
+            "status": "Resolved",
+            "notes": "Hyperthyroidism resolved post-thyroidectomy"
+          }
+        ],
+        "allergies": ["Iodine", "Methimazole"],
+        "currentMedications": [
+          {
+            "name": "Levothyroxine",
+            "dosage": "175mcg",
+            "frequency": "Once daily",
+            "startDate": "2024-02-15"
+          },
+          {
+            "name": "Calcium carbonate",
+            "dosage": "1000mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-02-15"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Max Bupa Health Insurance",
+        "policyNumber": "MB456123789",
+        "validUntil": "2026-09-18"
+      }
+    },
+    {
+      "patientId": "PAT-023",
+      "personalInfo": {
+        "firstName": "Manoj",
+        "lastName": "Singh",
+        "age": 53,
+        "gender": "Male",
+        "dateOfBirth": "1972-02-29",
+        "bloodType": "AB+",
+        "phone": "+91-7654321098",
+        "email": "manoj.singh@email.com",
+        "emergencyContact": {
+          "name": "Rekha Singh",
+          "relationship": "Spouse",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "434, Model Town",
+        "city": "Ludhiana",
+        "state": "Punjab",
+        "pincode": "141002",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Pancreatic Cancer (Stage 3)",
+            "diagnosedDate": "2024-07-12",
+            "severity": "Severe",
+            "status": "Under Treatment",
+            "notes": "Undergoing chemotherapy, poor prognosis"
+          },
+          {
+            "condition": "Diabetes Type 2",
+            "diagnosedDate": "2018-03-20",
+            "severity": "Moderate",
+            "status": "Poorly Controlled",
+            "notes": "Secondary to pancreatic dysfunction"
+          }
+        ],
+        "allergies": ["5-FU", "Tree nuts"],
+        "currentMedications": [
+          {
+            "name": "FOLFIRINOX",
+            "dosage": "Variable",
+            "frequency": "Every 2 weeks",
+            "startDate": "2024-08-01"
+          },
+          {
+            "name": "Insulin Glargine",
+            "dosage": "30 units",
+            "frequency": "Once daily",
+            "startDate": "2024-07-20"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Bajaj Allianz Health",
+        "policyNumber": "BA123789456",
+        "validUntil": "2026-02-29"
+      }
+    },
+    {
+      "patientId": "PAT-024",
+      "personalInfo": {
+        "firstName": "Radha",
+        "lastName": "Krishna",
+        "age": 29,
+        "gender": "Female",
+        "dateOfBirth": "1996-08-15",
+        "bloodType": "B+",
+        "phone": "+91-6543210987",
+        "email": "radha.krishna@email.com",
+        "emergencyContact": {
+          "name": "Krishna Murthy",
+          "relationship": "Father",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "545, Malleswaram",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560003",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Schizophrenia",
+            "diagnosedDate": "2020-11-30",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Paranoid type, well-controlled on antipsychotics"
+          },
+          {
+            "condition": "Metabolic Syndrome",
+            "diagnosedDate": "2022-06-18",
+            "severity": "Mild",
+            "status": "Improving",
+            "notes": "Weight loss and lifestyle changes helping"
+          }
+        ],
+        "allergies": ["Haloperidol", "Dairy products"],
+        "currentMedications": [
+          {
+            "name": "Risperidone",
+            "dosage": "4mg",
+            "frequency": "Once daily",
+            "startDate": "2020-12-15"
+          },
+          {
+            "name": "Metformin",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2022-07-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Star Health Insurance",
+        "policyNumber": "SH789456123",
+        "validUntil": "2026-08-15"
+      }
+    },
+    {
+      "patientId": "PAT-025",
+      "personalInfo": {
+        "firstName": "Anil",
+        "lastName": "Kapoor",
+        "age": 47,
+        "gender": "Male",
+        "dateOfBirth": "1978-06-24",
+        "bloodType": "O-",
+        "phone": "+91-5432109876",
+        "email": "anil.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Sunita Kapoor",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "656, Film City Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400059",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Myocardial Infarction",
+            "diagnosedDate": "2024-03-08",
+            "severity": "Severe",
+            "status": "Recovered",
+            "notes": "Anterior STEMI, underwent primary PCI"
+          },
+          {
+            "condition": "Hyperlipidemia",
+            "diagnosedDate": "2019-09-14",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Family history of CAD, on high-intensity statin"
+          }
+        ],
+        "allergies": ["Prasugrel", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Atorvastatin",
+            "dosage": "80mg",
+            "frequency": "Once daily",
+            "startDate": "2024-03-15"
+          },
+          {
+            "name": "Clopidogrel",
+            "dosage": "75mg",
+            "frequency": "Once daily",
+            "startDate": "2024-03-15"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "HDFC Ergo Health",
+        "policyNumber": "HE654987321",
+        "validUntil": "2026-06-24"
+      }
+    },
+    {
+      "patientId": "PAT-026",
+      "personalInfo": {
+        "firstName": "Deepika",
+        "lastName": "Sharma",
+        "age": 38,
+        "gender": "Female",
+        "dateOfBirth": "1987-12-05",
+        "bloodType": "A+",
+        "phone": "+91-4321098765",
+        "email": "deepika.sharma@email.com",
+        "emergencyContact": {
+          "name": "Rajesh Sharma",
+          "relationship": "Spouse",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "767, Saket",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110017",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Ovarian Cancer (Stage 2)",
+            "diagnosedDate": "2023-10-15",
+            "severity": "High",
+            "status": "In Remission",
+            "notes": "Completed chemotherapy and surgery, regular monitoring"
+          },
+          {
+            "condition": "BRCA1 Mutation",
+            "diagnosedDate": "2023-11-20",
+            "severity": "High",
+            "status": "Genetic Counseling",
+            "notes": "High risk for breast cancer, prophylactic measures discussed"
+          }
+        ],
+        "allergies": ["Carboplatin", "Latex"],
+        "currentMedications": [
+          {
+            "name": "Tamoxifen",
+            "dosage": "20mg",
+            "frequency": "Once daily",
+            "startDate": "2024-04-01"
+          },
+          {
+            "name": "Calcium Carbonate",
+            "dosage": "600mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Apollo Munich Health",
+        "policyNumber": "AM321654987",
+        "validUntil": "2026-12-05"
+      }
+    },
+    {
+      "patientId": "PAT-027",
+      "personalInfo": {
+        "firstName": "Sanjay",
+        "lastName": "Dutt",
+        "age": 65,
+        "gender": "Male",
+        "dateOfBirth": "1960-07-29",
+        "bloodType": "B-",
+        "phone": "+91-3210987654",
+        "email": "sanjay.dutt@email.com",
+        "emergencyContact": {
+          "name": "Manyata Dutt",
+          "relationship": "Spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "878, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Lung Cancer (Stage 3A)",
+            "diagnosedDate": "2020-08-12",
+            "severity": "Severe",
+            "status": "Survivor",
+            "notes": "Non-small cell lung cancer, completed treatment"
+          },
+          {
+            "condition": "Chronic Obstructive Pulmonary Disease",
+            "diagnosedDate": "2018-05-22",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Smoking history, on bronchodilators"
+          }
+        ],
+        "allergies": ["Docetaxel", "Peanuts"],
+        "currentMedications": [
+          {
+            "name": "Tiotropium",
+            "dosage": "18mcg",
+            "frequency": "Once daily",
+            "startDate": "2021-01-15"
+          },
+          {
+            "name": "Salbutamol",
+            "dosage": "100mcg",
+            "frequency": "As needed",
+            "startDate": "2021-01-15"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Religare Health Insurance",
+        "policyNumber": "RH987321456",
+        "validUntil": "2026-07-29"
+      }
+    },
+    {
+      "patientId": "PAT-028",
+      "personalInfo": {
+        "firstName": "Kavita",
+        "lastName": "Patel",
+        "age": 44,
+        "gender": "Female",
+        "dateOfBirth": "1981-11-11",
+        "bloodType": "AB-",
+        "phone": "+91-2109876543",
+        "email": "kavita.patel@email.com",
+        "emergencyContact": {
+          "name": "Nitin Patel",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "989, Navrangpura",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "pincode": "380009",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Systemic Lupus Erythematosus",
+            "diagnosedDate": "2019-04-18",
+            "severity": "Moderate",
+            "status": "Flare-ups",
+            "notes": "Lupus nephritis, on immunosuppressants"
+          },
+          {
+            "condition": "Antiphospholipid Syndrome",
+            "diagnosedDate": "2020-09-25",
+            "severity": "High",
+            "status": "On Anticoagulation",
+            "notes": "Secondary to SLE, history of DVT"
+          }
+        ],
+        "allergies": ["Sulfonamides", "Sun exposure"],
+        "currentMedications": [
+          {
+            "name": "Hydroxychloroquine",
+            "dosage": "400mg",
+            "frequency": "Once daily",
+            "startDate": "2019-05-01"
+          },
+          {
+            "name": "Warfarin",
+            "dosage": "5mg",
+            "frequency": "Once daily",
+            "startDate": "2020-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Oriental Insurance",
+        "policyNumber": "OI456789123",
+        "validUntil": "2026-11-11"
+      }
+    },
+    {
+      "patientId": "PAT-029",
+      "personalInfo": {
+        "firstName": "Arjun",
+        "lastName": "Reddy",
+        "age": 33,
+        "gender": "Male",
+        "dateOfBirth": "1992-03-14",
+        "bloodType": "O+",
+        "phone": "+91-1098765432",
+        "email": "arjun.reddy@email.com",
+        "emergencyContact": {
+          "name": "Preeti Reddy",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "1090, Jubilee Hills",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500033",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Brain Tumor (Glioblastoma)",
+            "diagnosedDate": "2024-05-20",
+            "severity": "Critical",
+            "status": "Under Treatment",
+            "notes": "Grade IV astrocytoma, poor prognosis"
+          },
+          {
+            "condition": "Seizure Disorder",
+            "diagnosedDate": "2024-05-25",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Secondary to brain tumor, on anticonvulsants"
+          }
+        ],
+        "allergies": ["Temozolomide", "Phenytoin"],
+        "currentMedications": [
+          {
+            "name": "Levetiracetam",
+            "dosage": "1000mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-06-01"
+          },
+          {
+            "name": "Dexamethasone",
+            "dosage": "4mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-06-01"
+          }
+        ],
+        "lastVisit": "2025-11-24",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "New India Assurance",
+        "policyNumber": "NI123456789",
+        "validUntil": "2026-03-14"
+      }
+    },
+    {
+      "patientId": "PAT-030",
+      "personalInfo": {
+        "firstName": "Meera",
+        "lastName": "Nair",
+        "age": 51,
+        "gender": "Female",
+        "dateOfBirth": "1974-01-08",
+        "bloodType": "A-",
+        "phone": "+91-9876541230",
+        "email": "meera.nair@email.com",
+        "emergencyContact": {
+          "name": "Suresh Nair",
+          "relationship": "Spouse",
+          "phone": "+91-9876541229"
+        }
+      },
+      "address": {
+        "street": "1201, Marine Drive",
+        "city": "Kochi",
+        "state": "Kerala",
+        "pincode": "682031",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Rheumatoid Arthritis",
+            "diagnosedDate": "2015-07-30",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Seropositive RA, on DMARDs"
+          },
+          {
+            "condition": "Osteoporosis",
+            "diagnosedDate": "2022-12-15",
+            "severity": "Moderate",
+            "status": "Treatment",
+            "notes": "Secondary to long-term steroid use"
+          }
+        ],
+        "allergies": ["Methotrexate", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Adalimumab",
+            "dosage": "40mg",
+            "frequency": "Every 2 weeks (injection)",
+            "startDate": "2023-01-15"
+          },
+          {
+            "name": "Alendronate",
+            "dosage": "70mg",
+            "frequency": "Once weekly",
+            "startDate": "2023-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-15",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "United India Insurance",
+        "policyNumber": "UI789123456",
+        "validUntil": "2026-01-08"
+      }
+    },
+    {
+      "patientId": "PAT-031",
+      "personalInfo": {
+        "firstName": "Vikram",
+        "lastName": "Bhatt",
+        "age": 59,
+        "gender": "Male",
+        "dateOfBirth": "1966-04-17",
+        "bloodType": "B+",
+        "phone": "+91-8765432109",
+        "email": "vikram.bhatt@email.com",
+        "emergencyContact": {
+          "name": "Shobha Bhatt",
+          "relationship": "Spouse",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "1312, Anna Nagar",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pincode": "600040",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Acute Myeloid Leukemia",
+            "diagnosedDate": "2023-06-12",
+            "severity": "Critical",
+            "status": "Remission",
+            "notes": "M2 subtype, completed induction therapy"
+          },
+          {
+            "condition": "Graft vs Host Disease",
+            "diagnosedDate": "2024-02-08",
+            "severity": "Moderate",
+            "status": "Chronic",
+            "notes": "Post bone marrow transplant complication"
+          }
+        ],
+        "allergies": ["Cytarabine", "Amphotericin B"],
+        "currentMedications": [
+          {
+            "name": "Mycophenolate",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-02-20"
+          },
+          {
+            "name": "Acyclovir",
+            "dosage": "400mg",
+            "frequency": "Three times daily",
+            "startDate": "2024-02-20"
+          }
+        ],
+        "lastVisit": "2025-11-23",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Tata AIG Health",
+        "policyNumber": "TA987654321",
+        "validUntil": "2026-04-17"
+      }
+    },
+    {
+      "patientId": "PAT-032",
+      "personalInfo": {
+        "firstName": "Nisha",
+        "lastName": "Agarwal",
+        "age": 36,
+        "gender": "Female",
+        "dateOfBirth": "1989-10-22",
+        "bloodType": "O-",
+        "phone": "+91-7654321098",
+        "email": "nisha.agarwal@email.com",
+        "emergencyContact": {
+          "name": "Rohit Agarwal",
+          "relationship": "Spouse",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "1423, Lajpat Nagar",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110024",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Inflammatory Bowel Disease (Crohn's)",
+            "diagnosedDate": "2018-09-05",
+            "severity": "Moderate",
+            "status": "Flare-ups",
+            "notes": "Ileocolonic involvement, on biologics"
+          },
+          {
+            "condition": "Perianal Fistula",
+            "diagnosedDate": "2021-03-18",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Complex fistula, multiple surgeries"
+          }
+        ],
+        "allergies": ["Azathioprine", "Codeine"],
+        "currentMedications": [
+          {
+            "name": "Infliximab",
+            "dosage": "5mg/kg",
+            "frequency": "Every 8 weeks (IV)",
+            "startDate": "2022-01-10"
+          },
+          {
+            "name": "Mesalamine",
+            "dosage": "1200mg",
+            "frequency": "Three times daily",
+            "startDate": "2018-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Cholamandalam MS Health",
+        "policyNumber": "CM456789123",
+        "validUntil": "2026-10-22"
+      }
+    },
+    {
+      "patientId": "PAT-033",
+      "personalInfo": {
+        "firstName": "Kiran",
+        "lastName": "Kumar",
+        "age": 62,
+        "gender": "Male",
+        "dateOfBirth": "1963-08-30",
+        "bloodType": "AB+",
+        "phone": "+91-6543210987",
+        "email": "kiran.kumar@email.com",
+        "emergencyContact": {
+          "name": "Lakshmi Kumar",
+          "relationship": "Spouse",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "1534, MG Road",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560001",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Esophageal Cancer (Stage 2)",
+            "diagnosedDate": "2024-01-15",
+            "severity": "High",
+            "status": "Post-Surgery",
+            "notes": "Esophagectomy completed, on surveillance"
+          },
+          {
+            "condition": "Barrett's Esophagus",
+            "diagnosedDate": "2020-11-08",
+            "severity": "Moderate",
+            "status": "Surveillance",
+            "notes": "High-grade dysplasia, precancerous condition"
+          }
+        ],
+        "allergies": ["5-Fluorouracil", "Morphine"],
+        "currentMedications": [
+          {
+            "name": "Omeprazole",
+            "dosage": "40mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-03-01"
+          },
+          {
+            "name": "Sucralfate",
+            "dosage": "1g",
+            "frequency": "Four times daily",
+            "startDate": "2024-03-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Future Generali Health",
+        "policyNumber": "FG123987456",
+        "validUntil": "2026-08-30"
+      }
+    },
+    {
+      "patientId": "PAT-034",
+      "personalInfo": {
+        "firstName": "Pooja",
+        "lastName": "Mehta",
+        "age": 48,
+        "gender": "Female",
+        "dateOfBirth": "1977-12-03",
+        "bloodType": "A+",
+        "phone": "+91-5432109876",
+        "email": "pooja.mehta@email.com",
+        "emergencyContact": {
+          "name": "Amit Mehta",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "1645, Borivali West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400092",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Ovarian Cancer (Stage 3C)",
+            "diagnosedDate": "2022-05-22",
+            "severity": "Severe",
+            "status": "In Remission",
+            "notes": "Serous adenocarcinoma, completed treatment"
+          },
+          {
+            "condition": "Peripheral Neuropathy",
+            "diagnosedDate": "2022-12-10",
+            "severity": "Moderate",
+            "status": "Chronic",
+            "notes": "Chemotherapy-induced, on neuropathic pain meds"
+          }
+        ],
+        "allergies": ["Taxol", "Adhesive tape"],
+        "currentMedications": [
+          {
+            "name": "Gabapentin",
+            "dosage": "300mg",
+            "frequency": "Three times daily",
+            "startDate": "2023-01-15"
+          },
+          {
+            "name": "Olaparib",
+            "dosage": "300mg",
+            "frequency": "Twice daily",
+            "startDate": "2023-03-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Care Health Insurance",
+        "policyNumber": "CH654321987",
+        "validUntil": "2026-12-03"
+      }
+    },
+    {
+      "patientId": "PAT-035",
+      "personalInfo": {
+        "firstName": "Ravi",
+        "lastName": "Shankar",
+        "age": 55,
+        "gender": "Male",
+        "dateOfBirth": "1970-06-18",
+        "bloodType": "B-",
+        "phone": "+91-4321098765",
+        "email": "ravi.shankar@email.com",
+        "emergencyContact": {
+          "name": "Usha Shankar",
+          "relationship": "Spouse",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "1756, Civil Lines",
+        "city": "Allahabad",
+        "state": "Uttar Pradesh",
+        "pincode": "211001",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Amyotrophic Lateral Sclerosis",
+            "diagnosedDate": "2023-02-14",
+            "severity": "Critical",
+            "status": "Progressive",
+            "notes": "Motor neuron disease, rapidly progressive"
+          },
+          {
+            "condition": "Dysphagia",
+            "diagnosedDate": "2023-08-20",
+            "severity": "Severe",
+            "status": "PEG Tube",
+            "notes": "Difficulty swallowing, nutritional support needed"
+          }
+        ],
+        "allergies": ["Riluzole", "Morphine"],
+        "currentMedications": [
+          {
+            "name": "Edaravone",
+            "dosage": "60mg",
+            "frequency": "IV cycles",
+            "startDate": "2023-04-01"
+          },
+          {
+            "name": "Baclofen",
+            "dosage": "10mg",
+            "frequency": "Three times daily",
+            "startDate": "2023-05-15"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Royal Sundaram Health",
+        "policyNumber": "RS321456789",
+        "validUntil": "2026-06-18"
+      }
+    },
+    {
+      "patientId": "PAT-036",
+      "personalInfo": {
+        "firstName": "Seema",
+        "lastName": "Malhotra",
+        "age": 42,
+        "gender": "Female",
+        "dateOfBirth": "1983-02-28",
+        "bloodType": "O+",
+        "phone": "+91-3210987654",
+        "email": "seema.malhotra@email.com",
+        "emergencyContact": {
+          "name": "Vinod Malhotra",
+          "relationship": "Spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "1867, Sector 17",
+        "city": "Chandigarh",
+        "state": "Chandigarh",
+        "pincode": "160017",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Cervical Cancer (Stage 2B)",
+            "diagnosedDate": "2023-07-25",
+            "severity": "High",
+            "status": "Post-Treatment",
+            "notes": "Squamous cell carcinoma, completed chemoradiation"
+          },
+          {
+            "condition": "Radiation Cystitis",
+            "diagnosedDate": "2024-01-12",
+            "severity": "Moderate",
+            "status": "Chronic",
+            "notes": "Treatment complication, ongoing management"
+          }
+        ],
+        "allergies": ["Cisplatin", "Iodine contrast"],
+        "currentMedications": [
+          {
+            "name": "Solifenacin",
+            "dosage": "5mg",
+            "frequency": "Once daily",
+            "startDate": "2024-02-01"
+          },
+          {
+            "name": "Cranberry extract",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-02-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "SBI Health Insurance",
+        "policyNumber": "SB987456123",
+        "validUntil": "2026-02-28"
+      }
+    },
+    {
+      "patientId": "PAT-037",
+      "personalInfo": {
+        "firstName": "Ajay",
+        "lastName": "Devgan",
+        "age": 56,
+        "gender": "Male",
+        "dateOfBirth": "1969-04-02",
+        "bloodType": "A-",
+        "phone": "+91-2109876543",
+        "email": "ajay.devgan@email.com",
+        "emergencyContact": {
+          "name": "Kajol Devgan",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "1978, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Liver Cirrhosis (Child-Pugh B)",
+            "diagnosedDate": "2021-11-30",
+            "severity": "Severe",
+            "status": "Compensated",
+            "notes": "Alcohol-related, abstinent for 3 years"
+          },
+          {
+            "condition": "Portal Hypertension",
+            "diagnosedDate": "2022-03-15",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Varices present, on beta-blockers"
+          }
+        ],
+        "allergies": ["NSAIDs", "Paracetamol"],
+        "currentMedications": [
+          {
+            "name": "Propranolol",
+            "dosage": "40mg",
+            "frequency": "Twice daily",
+            "startDate": "2022-04-01"
+          },
+          {
+            "name": "Spironolactone",
+            "dosage": "100mg",
+            "frequency": "Once daily",
+            "startDate": "2022-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "National Insurance",
+        "policyNumber": "NI789654123",
+        "validUntil": "2026-04-02"
+      }
+    },
+    {
+      "patientId": "PAT-038",
+      "personalInfo": {
+        "firstName": "Rani",
+        "lastName": "Mukherjee",
+        "age": 46,
+        "gender": "Female",
+        "dateOfBirth": "1979-03-21",
+        "bloodType": "AB-",
+        "phone": "+91-1098765432",
+        "email": "rani.mukherjee@email.com",
+        "emergencyContact": {
+          "name": "Aditya Chopra",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "2089, Salt Lake City",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "pincode": "700064",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Hodgkin's Lymphoma (Stage 3)",
+            "diagnosedDate": "2022-01-18",
+            "severity": "High",
+            "status": "Remission",
+            "notes": "Nodular sclerosis type, completed ABVD"
+          },
+          {
+            "condition": "Chemotherapy-induced Cardiomyopathy",
+            "diagnosedDate": "2022-09-05",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Doxorubicin-related, LVEF 45%"
+          }
+        ],
+        "allergies": ["Bleomycin", "ACE inhibitors"],
+        "currentMedications": [
+          {
+            "name": "Carvedilol",
+            "dosage": "25mg",
+            "frequency": "Twice daily",
+            "startDate": "2022-10-01"
+          },
+          {
+            "name": "Lisinopril",
+            "dosage": "10mg",
+            "frequency": "Once daily",
+            "startDate": "2022-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Liberty General Insurance",
+        "policyNumber": "LG456123789",
+        "validUntil": "2026-03-21"
+      }
+    },
+    {
+      "patientId": "PAT-039",
+      "personalInfo": {
+        "firstName": "Shahid",
+        "lastName": "Kapoor",
+        "age": 44,
+        "gender": "Male",
+        "dateOfBirth": "1981-02-25",
+        "bloodType": "B+",
+        "phone": "+91-9876543210",
+        "email": "shahid.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Mira Kapoor",
+          "relationship": "Spouse",
+          "phone": "+91-9876543209"
+        }
+      },
+      "address": {
+        "street": "2190, Bandra East",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400051",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Testicular Cancer (Stage 2)",
+            "diagnosedDate": "2023-09-12",
+            "severity": "High",
+            "status": "Surveillance",
+            "notes": "Non-seminoma, completed BEP chemotherapy"
+          },
+          {
+            "condition": "Retroperitoneal Fibrosis",
+            "diagnosedDate": "2024-03-08",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Post-chemotherapy complication"
+          }
+        ],
+        "allergies": ["Bleomycin", "Contrast media"],
+        "currentMedications": [
+          {
+            "name": "Prednisone",
+            "dosage": "10mg",
+            "frequency": "Once daily",
+            "startDate": "2024-04-01"
+          },
+          {
+            "name": "Alpha lipoic acid",
+            "dosage": "300mg",
+            "frequency": "Once daily",
+            "startDate": "2024-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Bharti AXA Health",
+        "policyNumber": "BA123789456",
+        "validUntil": "2026-02-25"
+      }
+    },
+    {
+      "patientId": "PAT-040",
+      "personalInfo": {
+        "firstName": "Vidya",
+        "lastName": "Balan",
+        "age": 46,
+        "gender": "Female",
+        "dateOfBirth": "1979-01-01",
+        "bloodType": "O-",
+        "phone": "+91-8765432109",
+        "email": "vidya.balan@email.com",
+        "emergencyContact": {
+          "name": "Siddharth Roy Kapur",
+          "relationship": "Spouse",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "2301, Versova",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400061",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Endometrial Cancer (Stage 1B)",
+            "diagnosedDate": "2024-06-15",
+            "severity": "Moderate",
+            "status": "Post-Surgery",
+            "notes": "Hysterectomy completed, good prognosis"
+          },
+          {
+            "condition": "Lynch Syndrome",
+            "diagnosedDate": "2024-07-20",
+            "severity": "High",
+            "status": "Genetic Counseling",
+            "notes": "Hereditary cancer syndrome, family screening"
+          }
+        ],
+        "allergies": ["Paclitaxel", "Latex gloves"],
+        "currentMedications": [
+          {
+            "name": "Hormone replacement therapy",
+            "dosage": "Variable",
+            "frequency": "Daily patch",
+            "startDate": "2024-08-01"
+          },
+          {
+            "name": "Aspirin",
+            "dosage": "81mg",
+            "frequency": "Once daily",
+            "startDate": "2024-08-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Digit General Insurance",
+        "policyNumber": "DG987321654",
+        "validUntil": "2026-01-01"
+      }
+    },
+    {
+      "patientId": "PAT-041",
+      "personalInfo": {
+        "firstName": "Hrithik",
+        "lastName": "Roshan",
+        "age": 51,
+        "gender": "Male",
+        "dateOfBirth": "1974-01-10",
+        "bloodType": "A+",
+        "phone": "+91-7654321098",
+        "email": "hrithik.roshan@email.com",
+        "emergencyContact": {
+          "name": "Sussanne Khan",
+          "relationship": "Ex-spouse",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "2412, Juhu Tara Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Chronic Subdural Hematoma",
+            "diagnosedDate": "2013-07-20",
+            "severity": "High",
+            "status": "Surgically Treated",
+            "notes": "Head injury during filming, neurosurgery required"
+          },
+          {
+            "condition": "Post-traumatic Seizures",
+            "diagnosedDate": "2013-09-15",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Secondary to brain injury, on anticonvulsants"
+          }
+        ],
+        "allergies": ["Phenytoin", "Sulfa drugs"],
+        "currentMedications": [
+          {
+            "name": "Levetiracetam",
+            "dosage": "750mg",
+            "frequency": "Twice daily",
+            "startDate": "2013-10-01"
+          },
+          {
+            "name": "Vitamin D3",
+            "dosage": "2000 IU",
+            "frequency": "Once daily",
+            "startDate": "2014-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "IFFCO Tokio Health",
+        "policyNumber": "IT654789321",
+        "validUntil": "2026-01-10"
+      }
+    },
+    {
+      "patientId": "PAT-042",
+      "personalInfo": {
+        "firstName": "Konkona",
+        "lastName": "Sen Sharma",
+        "age": 44,
+        "gender": "Female",
+        "dateOfBirth": "1981-12-03",
+        "bloodType": "B-",
+        "phone": "+91-6543210987",
+        "email": "konkona.sen@email.com",
+        "emergencyContact": {
+          "name": "Ranvir Shorey",
+          "relationship": "Ex-spouse",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "2523, Tollygunge",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "pincode": "700053",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Major Depressive Disorder",
+            "diagnosedDate": "2019-05-14",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Recurrent episodes, on maintenance therapy"
+          },
+          {
+            "condition": "Fibromyalgia",
+            "diagnosedDate": "2021-08-22",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Chronic pain syndrome, multidisciplinary approach"
+          }
+        ],
+        "allergies": ["Tricyclic antidepressants", "Codeine"],
+        "currentMedications": [
+          {
+            "name": "Escitalopram",
+            "dosage": "20mg",
+            "frequency": "Once daily",
+            "startDate": "2019-06-01"
+          },
+          {
+            "name": "Pregabalin",
+            "dosage": "150mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-09-15"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Go Digit Health",
+        "policyNumber": "GD321987654",
+        "validUntil": "2026-12-03"
+      }
+    },
+    {
+      "patientId": "PAT-043",
+      "personalInfo": {
+        "firstName": "Naseeruddin",
+        "lastName": "Shah",
+        "age": 74,
+        "gender": "Male",
+        "dateOfBirth": "1950-07-20",
+        "bloodType": "AB+",
+        "phone": "+91-5432109876",
+        "email": "naseeruddin.shah@email.com",
+        "emergencyContact": {
+          "name": "Ratna Pathak Shah",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "2634, Versova",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400061",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Pneumonia (Severe)",
+            "diagnosedDate": "2022-08-15",
+            "severity": "Critical",
+            "status": "Recovered",
+            "notes": "COVID-19 related pneumonia, ICU stay required"
+          },
+          {
+            "condition": "Post-COVID Syndrome",
+            "diagnosedDate": "2022-11-20",
+            "severity": "Moderate",
+            "status": "Ongoing",
+            "notes": "Fatigue, brain fog, respiratory issues"
+          }
+        ],
+        "allergies": ["Penicillin", "Contrast dye"],
+        "currentMedications": [
+          {
+            "name": "Tiotropium",
+            "dosage": "18mcg",
+            "frequency": "Once daily",
+            "startDate": "2022-12-01"
+          },
+          {
+            "name": "Multivitamin",
+            "dosage": "1 tablet",
+            "frequency": "Once daily",
+            "startDate": "2022-12-01"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Aditya Birla Health",
+        "policyNumber": "AB987456321",
+        "validUntil": "2026-07-20"
+      }
+    },
+    {
+      "patientId": "PAT-044",
+      "personalInfo": {
+        "firstName": "Tabu",
+        "lastName": "Hashmi",
+        "age": 54,
+        "gender": "Female",
+        "dateOfBirth": "1971-11-04",
+        "bloodType": "O+",
+        "phone": "+91-4321098765",
+        "email": "tabu.hashmi@email.com",
+        "emergencyContact": {
+          "name": "Farah Naaz",
+          "relationship": "Sister",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "2745, Banjara Hills",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500034",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Temporal Lobe Epilepsy",
+            "diagnosedDate": "2018-03-12",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Complex partial seizures, on dual therapy"
+          },
+          {
+            "condition": "Hypothyroidism",
+            "diagnosedDate": "2015-09-08",
+            "severity": "Mild",
+            "status": "Well-controlled",
+            "notes": "Hashimoto's thyroiditis, stable on levothyroxine"
+          }
+        ],
+        "allergies": ["Carbamazepine", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Lamotrigine",
+            "dosage": "200mg",
+            "frequency": "Twice daily",
+            "startDate": "2018-04-01"
+          },
+          {
+            "name": "Levothyroxine",
+            "dosage": "75mcg",
+            "frequency": "Once daily",
+            "startDate": "2015-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-15",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Manipal Cigna Health",
+        "policyNumber": "MC456321789",
+        "validUntil": "2026-11-04"
+      }
+    },
+    {
+      "patientId": "PAT-045",
+      "personalInfo": {
+        "firstName": "Irrfan",
+        "lastName": "Khan",
+        "age": 54,
+        "gender": "Male",
+        "dateOfBirth": "1971-01-07",
+        "bloodType": "A-",
+        "phone": "+91-3210987654",
+        "email": "irrfan.khan@email.com",
+        "emergencyContact": {
+          "name": "Sutapa Sikdar",
+          "relationship": "Spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "2856, Versova",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400061",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Neuroendocrine Tumor (Grade 3)",
+            "diagnosedDate": "2018-03-05",
+            "severity": "Critical",
+            "status": "Deceased",
+            "notes": "Rare cancer, extensive treatment in London and India"
+          },
+          {
+            "condition": "Jaundice",
+            "diagnosedDate": "2019-11-18",
+            "severity": "Severe",
+            "status": "Treatment",
+            "notes": "Colon infection leading to complications"
+          }
+        ],
+        "allergies": ["Octreotide", "Morphine derivatives"],
+        "currentMedications": [
+          {
+            "name": "Palliative care medications",
+            "dosage": "Variable",
+            "frequency": "As needed",
+            "startDate": "2020-01-01"
+          }
+        ],
+        "lastVisit": "2020-04-29",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Universal Sompo Health",
+        "policyNumber": "US789123456",
+        "validUntil": "2020-01-07"
+      }
+    },
+    {
+      "patientId": "PAT-046",
+      "personalInfo": {
+        "firstName": "Shilpa",
+        "lastName": "Shetty",
+        "age": 50,
+        "gender": "Female",
+        "dateOfBirth": "1975-06-08",
+        "bloodType": "B+",
+        "phone": "+91-2109876543",
+        "email": "shilpa.shetty@email.com",
+        "emergencyContact": {
+          "name": "Raj Kundra",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "2967, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Autoimmune Hepatitis",
+            "diagnosedDate": "2021-09-22",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Type 1 AIH, responds well to immunosuppression"
+          },
+          {
+            "condition": "Osteoarthritis (Cervical Spine)",
+            "diagnosedDate": "2020-04-15",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Related to yoga practice, managed conservatively"
+          }
+        ],
+        "allergies": ["Azathioprine", "NSAIDs"],
+        "currentMedications": [
+          {
+            "name": "Prednisolone",
+            "dosage": "7.5mg",
+            "frequency": "Once daily",
+            "startDate": "2021-10-15"
+          },
+          {
+            "name": "Mycophenolate",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-10-15"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Kotak Health Insurance",
+        "policyNumber": "KH123789456",
+        "validUntil": "2026-06-08"
+      }
+    },
+    {
+      "patientId": "PAT-047",
+      "personalInfo": {
+        "firstName": "Akshay",
+        "lastName": "Kumar",
+        "age": 57,
+        "gender": "Male",
+        "dateOfBirth": "1967-09-09",
+        "bloodType": "O-",
+        "phone": "+91-1098765432",
+        "email": "akshay.kumar@email.com",
+        "emergencyContact": {
+          "name": "Twinkle Khanna",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "3078, Juhu Tara Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Herniated Disc (L4-L5)",
+            "diagnosedDate": "2019-02-18",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Action-related injury, avoided surgery"
+          },
+          {
+            "condition": "Gastroesophageal Reflux Disease",
+            "diagnosedDate": "2017-11-30",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Dietary management and PPI therapy"
+          }
+        ],
+        "allergies": ["Muscle relaxants", "Nuts"],
+        "currentMedications": [
+          {
+            "name": "Omeprazole",
+            "dosage": "20mg",
+            "frequency": "Once daily",
+            "startDate": "2018-01-01"
+          },
+          {
+            "name": "Physiotherapy",
+            "dosage": "N/A",
+            "frequency": "Twice weekly",
+            "startDate": "2019-03-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "ManipalCigna Health",
+        "policyNumber": "MC789456123",
+        "validUntil": "2026-09-09"
+      }
+    },
+    {
+      "patientId": "PAT-048",
+      "personalInfo": {
+        "firstName": "Sushmita",
+        "lastName": "Sen",
+        "age": 50,
+        "gender": "Female",
+        "dateOfBirth": "1975-11-19",
+        "bloodType": "A+",
+        "phone": "+91-9876543210",
+        "email": "sushmita.sen@email.com",
+        "emergencyContact": {
+          "name": "Renee Sen",
+          "relationship": "Daughter",
+          "phone": "+91-9876543209"
+        }
+      },
+      "address": {
+        "street": "3189, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Myocardial Infarction",
+            "diagnosedDate": "2023-02-28",
+            "severity": "Severe",
+            "status": "Recovered",
+            "notes": "Angioplasty performed, lifestyle modifications"
+          },
+          {
+            "condition": "Addison's Disease",
+            "diagnosedDate": "2014-05-12",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Autoimmune adrenal insufficiency, on replacement"
+          }
+        ],
+        "allergies": ["Beta-blockers", "ACE inhibitors"],
+        "currentMedications": [
+          {
+            "name": "Hydrocortisone",
+            "dosage": "15mg",
+            "frequency": "Morning, 5mg evening",
+            "startDate": "2014-06-01"
+          },
+          {
+            "name": "Fludrocortisone",
+            "dosage": "0.1mg",
+            "frequency": "Once daily",
+            "startDate": "2014-06-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Niva Bupa Health",
+        "policyNumber": "NB456123789",
+        "validUntil": "2026-11-19"
+      }
+    },
+    {
+      "patientId": "PAT-049",
+      "personalInfo": {
+        "firstName": "John",
+        "lastName": "Abraham",
+        "age": 52,
+        "gender": "Male",
+        "dateOfBirth": "1972-12-17",
+        "bloodType": "B-",
+        "phone": "+91-8765432109",
+        "email": "john.abraham@email.com",
+        "emergencyContact": {
+          "name": "Priya Runchal",
+          "relationship": "Spouse",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "3290, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Traumatic Brain Injury",
+            "diagnosedDate": "2010-08-25",
+            "severity": "Severe",
+            "status": "Recovered",
+            "notes": "Motorcycle accident, required neurosurgery"
+          },
+          {
+            "condition": "Post-concussion Syndrome",
+            "diagnosedDate": "2010-12-20",
+            "severity": "Moderate",
+            "status": "Residual symptoms",
+            "notes": "Persistent headaches, concentration issues"
+          }
+        ],
+        "allergies": ["Anticonvulsants", "Opioids"],
+        "currentMedications": [
+          {
+            "name": "Topiramate",
+            "dosage": "100mg",
+            "frequency": "Twice daily",
+            "startDate": "2011-01-15"
+          },
+          {
+            "name": "Amitriptyline",
+            "dosage": "25mg",
+            "frequency": "At bedtime",
+            "startDate": "2011-01-15"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Reliance Health Insurance",
+        "policyNumber": "RH321654987",
+        "validUntil": "2026-12-17"
+      }
+    },
+    {
+      "patientId": "PAT-050",
+      "personalInfo": {
+        "firstName": "Bipasha",
+        "lastName": "Basu",
+        "age": 46,
+        "gender": "Female",
+        "dateOfBirth": "1979-01-07",
+        "bloodType": "AB-",
+        "phone": "+91-7654321098",
+        "email": "bipasha.basu@email.com",
+        "emergencyContact": {
+          "name": "Karan Singh Grover",
+          "relationship": "Spouse",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "3401, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Polycystic Ovary Syndrome",
+            "diagnosedDate": "2005-03-22",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Insulin resistance, metabolic syndrome"
+          },
+          {
+            "condition": "Gestational Diabetes",
+            "diagnosedDate": "2016-04-10",
+            "severity": "Mild",
+            "status": "Resolved",
+            "notes": "During pregnancy, now monitoring for Type 2 DM"
+          }
+        ],
+        "allergies": ["Metformin", "Artificial sweeteners"],
+        "currentMedications": [
+          {
+            "name": "Inositol",
+            "dosage": "2g",
+            "frequency": "Twice daily",
+            "startDate": "2020-01-01"
+          },
+          {
+            "name": "Vitamin D3",
+            "dosage": "4000 IU",
+            "frequency": "Once daily",
+            "startDate": "2020-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Bajaj Allianz Health",
+        "policyNumber": "BA987321456",
+        "validUntil": "2026-01-07"
+      }
+    },
+    {
+      "patientId": "PAT-051",
+      "personalInfo": {
+        "firstName": "Ranbir",
+        "lastName": "Kapoor",
+        "age": 42,
+        "gender": "Male",
+        "dateOfBirth": "1982-09-28",
+        "bloodType": "O+",
+        "phone": "+91-6543210987",
+        "email": "ranbir.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Alia Bhatt",
+          "relationship": "Spouse",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "3512, Pali Hill",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Ulcerative Colitis",
+            "diagnosedDate": "2019-06-15",
+            "severity": "Moderate",
+            "status": "Remission",
+            "notes": "Pan-colitis, responds well to biologics"
+          },
+          {
+            "condition": "Primary Sclerosing Cholangitis",
+            "diagnosedDate": "2022-01-20",
+            "severity": "High",
+            "status": "Progressive",
+            "notes": "Associated with IBD, liver transplant candidate"
+          }
+        ],
+        "allergies": ["Sulfasalazine", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Vedolizumab",
+            "dosage": "300mg",
+            "frequency": "Every 8 weeks (IV)",
+            "startDate": "2022-03-01"
+          },
+          {
+            "name": "Ursodeoxycholic acid",
+            "dosage": "300mg",
+            "frequency": "Three times daily",
+            "startDate": "2022-02-01"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "HDFC Ergo Health",
+        "policyNumber": "HE789456123",
+        "validUntil": "2026-09-28"
+      }
+    },
+    {
+      "patientId": "PAT-052",
+      "personalInfo": {
+        "firstName": "Alia",
+        "lastName": "Bhatt",
+        "age": 31,
+        "gender": "Female",
+        "dateOfBirth": "1993-03-15",
+        "bloodType": "A-",
+        "phone": "+91-5432109876",
+        "email": "alia.bhatt@email.com",
+        "emergencyContact": {
+          "name": "Ranbir Kapoor",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "3623, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Postpartum Cardiomyopathy",
+            "diagnosedDate": "2023-01-15",
+            "severity": "Moderate",
+            "status": "Improving",
+            "notes": "After delivery, LVEF 35%, now 45%"
+          },
+          {
+            "condition": "Iron Deficiency Anemia",
+            "diagnosedDate": "2022-11-20",
+            "severity": "Mild",
+            "status": "Treated",
+            "notes": "Post-delivery anemia, responding to iron therapy"
+          }
+        ],
+        "allergies": ["ACE inhibitors", "Ferrous sulfate"],
+        "currentMedications": [
+          {
+            "name": "Carvedilol",
+            "dosage": "12.5mg",
+            "frequency": "Twice daily",
+            "startDate": "2023-02-01"
+          },
+          {
+            "name": "Iron sucrose",
+            "dosage": "100mg",
+            "frequency": "Weekly IV",
+            "startDate": "2023-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Star Health Insurance",
+        "policyNumber": "SH654987321",
+        "validUntil": "2026-03-15"
+      }
+    },
+    {
+      "patientId": "PAT-053",
+      "personalInfo": {
+        "firstName": "Ranveer",
+        "lastName": "Singh",
+        "age": 39,
+        "gender": "Male",
+        "dateOfBirth": "1985-07-06",
+        "bloodType": "B+",
+        "phone": "+91-4321098765",
+        "email": "ranveer.singh@email.com",
+        "emergencyContact": {
+          "name": "Deepika Padukone",
+          "relationship": "Spouse",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "3734, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Bipolar Disorder Type 1",
+            "diagnosedDate": "2020-09-12",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Manic episodes controlled, on mood stabilizers"
+          },
+          {
+            "condition": "Attention Deficit Hyperactivity Disorder",
+            "diagnosedDate": "2021-02-28",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Adult ADHD, impacts concentration"
+          }
+        ],
+        "allergies": ["Lithium", "Stimulants"],
+        "currentMedications": [
+          {
+            "name": "Quetiapine",
+            "dosage": "300mg",
+            "frequency": "At bedtime",
+            "startDate": "2020-10-15"
+          },
+          {
+            "name": "Lamotrigine",
+            "dosage": "150mg",
+            "frequency": "Twice daily",
+            "startDate": "2020-11-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Max Bupa Health",
+        "policyNumber": "MB321789456",
+        "validUntil": "2026-07-06"
+      }
+    },
+    {
+      "patientId": "PAT-054",
+      "personalInfo": {
+        "firstName": "Deepika",
+        "lastName": "Padukone",
+        "age": 39,
+        "gender": "Female",
+        "dateOfBirth": "1986-01-05",
+        "bloodType": "O-",
+        "phone": "+91-3210987654",
+        "email": "deepika.padukone@email.com",
+        "emergencyContact": {
+          "name": "Ranveer Singh",
+          "relationship": "Spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "3845, Prabhadevi",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400025",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Clinical Depression",
+            "diagnosedDate": "2015-02-14",
+            "severity": "Moderate",
+            "status": "Well-controlled",
+            "notes": "Speaks openly about mental health, advocacy work"
+          },
+          {
+            "condition": "Anxiety Disorder",
+            "diagnosedDate": "2015-02-14",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Generalized anxiety, stress management techniques"
+          }
+        ],
+        "allergies": ["Benzodiazepines", "Certain fragrances"],
+        "currentMedications": [
+          {
+            "name": "Sertraline",
+            "dosage": "50mg",
+            "frequency": "Once daily",
+            "startDate": "2015-03-01"
+          },
+          {
+            "name": "Cognitive Behavioral Therapy",
+            "dosage": "N/A",
+            "frequency": "Weekly sessions",
+            "startDate": "2015-03-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "ICICI Lombard Health",
+        "policyNumber": "IL987654123",
+        "validUntil": "2026-01-05"
+      }
+    },
+    {
+      "patientId": "PAT-055",
+      "personalInfo": {
+        "firstName": "Katrina",
+        "lastName": "Kaif",
+        "age": 41,
+        "gender": "Female",
+        "dateOfBirth": "1983-07-16",
+        "bloodType": "A+",
+        "phone": "+91-2109876543",
+        "email": "katrina.kaif@email.com",
+        "emergencyContact": {
+          "name": "Vicky Kaushal",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "3956, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Endometriosis (Stage 3)",
+            "diagnosedDate": "2018-05-20",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Ovarian endometriomas, fertility concerns"
+          },
+          {
+            "condition": "Migraine with Aura",
+            "diagnosedDate": "2012-08-15",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Triggered by stress and hormonal changes"
+          }
+        ],
+        "allergies": ["Triptans", "Hormonal contraceptives"],
+        "currentMedications": [
+          {
+            "name": "Dienogest",
+            "dosage": "2mg",
+            "frequency": "Once daily",
+            "startDate": "2018-07-01"
+          },
+          {
+            "name": "Propranolol",
+            "dosage": "80mg",
+            "frequency": "Once daily",
+            "startDate": "2012-09-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Apollo Munich Health",
+        "policyNumber": "AM456789321",
+        "validUntil": "2026-07-16"
+      }
+    },
+    {
+      "patientId": "PAT-056",
+      "personalInfo": {
+        "firstName": "Vicky",
+        "lastName": "Kaushal",
+        "age": 36,
+        "gender": "Male",
+        "dateOfBirth": "1988-05-16",
+        "bloodType": "B-",
+        "phone": "+91-1098765432",
+        "email": "vicky.kaushal@email.com",
+        "emergencyContact": {
+          "name": "Katrina Kaif",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "4067, Juhu Tara Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Compartment Syndrome",
+            "diagnosedDate": "2021-11-08",
+            "severity": "Severe",
+            "status": "Recovered",
+            "notes": "Exercise-induced, required fasciotomy"
+          },
+          {
+            "condition": "Post-surgical Neuropathy",
+            "diagnosedDate": "2022-01-15",
+            "severity": "Mild",
+            "status": "Improving",
+            "notes": "Residual weakness in affected limb"
+          }
+        ],
+        "allergies": ["Muscle relaxants", "Local anesthetics"],
+        "currentMedications": [
+          {
+            "name": "Gabapentin",
+            "dosage": "100mg",
+            "frequency": "Three times daily",
+            "startDate": "2022-02-01"
+          },
+          {
+            "name": "Vitamin B complex",
+            "dosage": "1 tablet",
+            "frequency": "Once daily",
+            "startDate": "2022-02-01"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Religare Health",
+        "policyNumber": "RH123789654",
+        "validUntil": "2026-05-16"
+      }
+    },
+    {
+      "patientId": "PAT-057",
+      "personalInfo": {
+        "firstName": "Sonam",
+        "lastName": "Kapoor",
+        "age": 39,
+        "gender": "Female",
+        "dateOfBirth": "1985-06-09",
+        "bloodType": "AB+",
+        "phone": "+91-9876543210",
+        "email": "sonam.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Anand Ahuja",
+          "relationship": "Spouse",
+          "phone": "+91-9876543209"
+        }
+      },
+      "address": {
+        "street": "4178, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Type 1 Diabetes Mellitus",
+            "diagnosedDate": "2007-04-12",
+            "severity": "Moderate",
+            "status": "Well-controlled",
+            "notes": "Diagnosed young, excellent glucose management"
+          },
+          {
+            "condition": "Diabetic Retinopathy",
+            "diagnosedDate": "2020-11-25",
+            "severity": "Mild",
+            "status": "Monitored",
+            "notes": "Background retinopathy, annual screening"
+          }
+        ],
+        "allergies": ["Rapid-acting insulin analogs", "Sulfa drugs"],
+        "currentMedications": [
+          {
+            "name": "Insulin Glargine",
+            "dosage": "24 units",
+            "frequency": "Once daily",
+            "startDate": "2007-05-01"
+          },
+          {
+            "name": "Insulin Aspart",
+            "dosage": "Variable",
+            "frequency": "Before meals",
+            "startDate": "2007-05-01"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Oriental Insurance",
+        "policyNumber": "OI789321654",
+        "validUntil": "2026-06-09"
+      }
+    },
+    {
+      "patientId": "PAT-058",
+      "personalInfo": {
+        "firstName": "Anand",
+        "lastName": "Ahuja",
+        "age": 41,
+        "gender": "Male",
+        "dateOfBirth": "1983-07-29",
+        "bloodType": "O+",
+        "phone": "+91-8765432109",
+        "email": "anand.ahuja@email.com",
+        "emergencyContact": {
+          "name": "Sonam Kapoor",
+          "relationship": "Spouse",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "4289, Khar West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400052",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Psoriatic Arthritis",
+            "diagnosedDate": "2019-03-18",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Axial involvement, responds to biologics"
+          },
+          {
+            "condition": "Psoriasis Vulgaris",
+            "diagnosedDate": "2015-09-22",
+            "severity": "Mild",
+            "status": "Stable",
+            "notes": "Plaque psoriasis, topical therapy sufficient"
+          }
+        ],
+        "allergies": ["Methotrexate", "Gold compounds"],
+        "currentMedications": [
+          {
+            "name": "Adalimumab",
+            "dosage": "40mg",
+            "frequency": "Every 2 weeks (injection)",
+            "startDate": "2019-05-01"
+          },
+          {
+            "name": "Clobetasol propionate",
+            "dosage": "0.05%",
+            "frequency": "Topical, twice daily",
+            "startDate": "2015-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-15",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "New India Assurance",
+        "policyNumber": "NI456123987",
+        "validUntil": "2026-07-29"
+      }
+    },
+    {
+      "patientId": "PAT-059",
+      "personalInfo": {
+        "firstName": "Kareena",
+        "lastName": "Kapoor Khan",
+        "age": 44,
+        "gender": "Female",
+        "dateOfBirth": "1980-09-21",
+        "bloodType": "A-",
+        "phone": "+91-7654321098",
+        "email": "kareena.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Saif Ali Khan",
+          "relationship": "Spouse",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "4390, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Gestational Diabetes (Recurrent)",
+            "diagnosedDate": "2016-12-20",
+            "severity": "Moderate",
+            "status": "Risk Monitoring",
+            "notes": "Both pregnancies, high risk for Type 2 DM"
+          },
+          {
+            "condition": "Thyroiditis (Postpartum)",
+            "diagnosedDate": "2017-06-15",
+            "severity": "Mild",
+            "status": "Resolved",
+            "notes": "Temporary hyperthyroidism, now euthyroid"
+          }
+        ],
+        "allergies": ["Insulin", "Iodinated contrast"],
+        "currentMedications": [
+          {
+            "name": "Metformin",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-01-01"
+          },
+          {
+            "name": "Prenatal vitamins",
+            "dosage": "1 tablet",
+            "frequency": "Once daily",
+            "startDate": "2020-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-14",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "United India Insurance",
+        "policyNumber": "UI123456987",
+        "validUntil": "2026-09-21"
+      }
+    },
+    {
+      "patientId": "PAT-060",
+      "personalInfo": {
+        "firstName": "Saif",
+        "lastName": "Ali Khan",
+        "age": 54,
+        "gender": "Male",
+        "dateOfBirth": "1970-08-16",
+        "bloodType": "B+",
+        "phone": "+91-6543210987",
+        "email": "saif.ali.khan@email.com",
+        "emergencyContact": {
+          "name": "Kareena Kapoor Khan",
+          "relationship": "Spouse",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "4501, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Myocarditis",
+            "diagnosedDate": "2021-04-18",
+            "severity": "Moderate",
+            "status": "Recovered",
+            "notes": "Viral myocarditis, cardiac function normalized"
+          },
+          {
+            "condition": "Sleep Apnea (Moderate)",
+            "diagnosedDate": "2019-11-30",
+            "severity": "Moderate",
+            "status": "Treated",
+            "notes": "CPAP therapy, weight loss recommended"
+          }
+        ],
+        "allergies": ["Beta-blockers", "Sleep medications"],
+        "currentMedications": [
+          {
+            "name": "CPAP therapy",
+            "dosage": "N/A",
+            "frequency": "Nightly",
+            "startDate": "2020-01-15"
+          },
+          {
+            "name": "Omega-3 fatty acids",
+            "dosage": "1g",
+            "frequency": "Once daily",
+            "startDate": "2021-06-01"
+          }
+        ],
+        "lastVisit": "2025-11-13",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Tata AIG Health",
+        "policyNumber": "TA654987321",
+        "validUntil": "2026-08-16"
+      }
+    },
+    {
+      "patientId": "PAT-061",
+      "personalInfo": {
+        "firstName": "Arshad",
+        "lastName": "Warsi",
+        "age": 56,
+        "gender": "Male",
+        "dateOfBirth": "1968-04-19",
+        "bloodType": "O-",
+        "phone": "+91-5432109876",
+        "email": "arshad.warsi@email.com",
+        "emergencyContact": {
+          "name": "Maria Goretti",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "4612, Khar West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400052",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Dilated Cardiomyopathy",
+            "diagnosedDate": "2022-07-25",
+            "severity": "High",
+            "status": "Stable",
+            "notes": "LVEF 30%, on optimal medical therapy"
+          },
+          {
+            "condition": "Atrial Fibrillation",
+            "diagnosedDate": "2022-08-10",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Permanent AF, on anticoagulation"
+          }
+        ],
+        "allergies": ["Amiodarone", "Digoxin"],
+        "currentMedications": [
+          {
+            "name": "Sacubitril/Valsartan",
+            "dosage": "97/103mg",
+            "frequency": "Twice daily",
+            "startDate": "2022-09-01"
+          },
+          {
+            "name": "Apixaban",
+            "dosage": "5mg",
+            "frequency": "Twice daily",
+            "startDate": "2022-08-15"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Cholamandalam MS Health",
+        "policyNumber": "CM789456321",
+        "validUntil": "2026-04-19"
+      }
+    },
+    {
+      "patientId": "PAT-062",
+      "personalInfo": {
+        "firstName": "Nimrat",
+        "lastName": "Kaur",
+        "age": 42,
+        "gender": "Female",
+        "dateOfBirth": "1982-03-13",
+        "bloodType": "AB-",
+        "phone": "+91-4321098765",
+        "email": "nimrat.kaur@email.com",
+        "emergencyContact": {
+          "name": "Ravi Kaur",
+          "relationship": "Father",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "4723, Model Town",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110009",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Inflammatory Breast Cancer",
+            "diagnosedDate": "2023-05-10",
+            "severity": "Critical",
+            "status": "Under Treatment",
+            "notes": "Stage IIIB, undergoing neoadjuvant chemotherapy"
+          },
+          {
+            "condition": "Chemotherapy-induced Peripheral Neuropathy",
+            "diagnosedDate": "2023-09-15",
+            "severity": "Moderate",
+            "status": "Managing",
+            "notes": "Taxane-related neuropathy, dose modifications"
+          }
+        ],
+        "allergies": ["Docetaxel", "Red dye"],
+        "currentMedications": [
+          {
+            "name": "AC-T Protocol",
+            "dosage": "Variable",
+            "frequency": "Every 3 weeks",
+            "startDate": "2023-06-01"
+          },
+          {
+            "name": "Duloxetine",
+            "dosage": "60mg",
+            "frequency": "Once daily",
+            "startDate": "2023-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-23",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Future Generali Health",
+        "policyNumber": "FG321654987",
+        "validUntil": "2026-03-13"
+      }
+    },
+    {
+      "patientId": "PAT-063",
+      "personalInfo": {
+        "firstName": "Ayushmann",
+        "lastName": "Khurrana",
+        "age": 40,
+        "gender": "Male",
+        "dateOfBirth": "1984-09-14",
+        "bloodType": "A+",
+        "phone": "+91-3210987654",
+        "email": "ayushmann.khurrana@email.com",
+        "emergencyContact": {
+          "name": "Tahira Kashyap",
+          "relationship": "Spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "4834, Sector 21",
+        "city": "Chandigarh",
+        "state": "Chandigarh",
+        "pincode": "160022",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Acoustic Neuroma",
+            "diagnosedDate": "2021-01-20",
+            "severity": "Moderate",
+            "status": "Post-Surgery",
+            "notes": "Right-sided tumor, hearing preserved"
+          },
+          {
+            "condition": "Tinnitus",
+            "diagnosedDate": "2021-03-05",
+            "severity": "Mild",
+            "status": "Chronic",
+            "notes": "Post-surgical complication, manageable"
+          }
+        ],
+        "allergies": ["General anesthesia complications", "Steroids"],
+        "currentMedications": [
+          {
+            "name": "Betahistine",
+            "dosage": "16mg",
+            "frequency": "Three times daily",
+            "startDate": "2021-04-01"
+          },
+          {
+            "name": "Melatonin",
+            "dosage": "3mg",
+            "frequency": "At bedtime",
+            "startDate": "2021-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Care Health Insurance",
+        "policyNumber": "CH987321456",
+        "validUntil": "2026-09-14"
+      }
+    },
+    {
+      "patientId": "PAT-064",
+      "personalInfo": {
+        "firstName": "Tahira",
+        "lastName": "Kashyap",
+        "age": 41,
+        "gender": "Female",
+        "dateOfBirth": "1983-01-21",
+        "bloodType": "B-",
+        "phone": "+91-2109876543",
+        "email": "tahira.kashyap@email.com",
+        "emergencyContact": {
+          "name": "Ayushmann Khurrana",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "4945, Sector 26",
+        "city": "Chandigarh",
+        "state": "Chandigarh",
+        "pincode": "160019",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Breast Cancer (Stage 0)",
+            "diagnosedDate": "2018-09-25",
+            "severity": "Low",
+            "status": "Survivor",
+            "notes": "DCIS, lumpectomy and radiation completed"
+          },
+          {
+            "condition": "BRCA Gene Mutation",
+            "diagnosedDate": "2018-11-10",
+            "severity": "High",
+            "status": "Monitoring",
+            "notes": "Increased surveillance, lifestyle modifications"
+          }
+        ],
+        "allergies": ["Tamoxifen", "Hormone replacement"],
+        "currentMedications": [
+          {
+            "name": "Vitamin D3",
+            "dosage": "2000 IU",
+            "frequency": "Once daily",
+            "startDate": "2019-01-01"
+          },
+          {
+            "name": "Omega-3 supplements",
+            "dosage": "1000mg",
+            "frequency": "Once daily",
+            "startDate": "2019-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Royal Sundaram Health",
+        "policyNumber": "RS654789123",
+        "validUntil": "2026-01-21"
+      }
+    },
+    {
+      "patientId": "PAT-065",
+      "personalInfo": {
+        "firstName": "Rajkummar",
+        "lastName": "Rao",
+        "age": 40,
+        "gender": "Male",
+        "dateOfBirth": "1984-08-31",
+        "bloodType": "O+",
+        "phone": "+91-1098765432",
+        "email": "rajkummar.rao@email.com",
+        "emergencyContact": {
+          "name": "Patralekhaa",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "5056, Versova",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400061",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Ankylosing Spondylitis",
+            "diagnosedDate": "2019-06-18",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "HLA-B27 positive, responds well to biologics"
+          },
+          {
+            "condition": "Uveitis",
+            "diagnosedDate": "2020-12-05",
+            "severity": "Mild",
+            "status": "Recurrent",
+            "notes": "Associated with AS, requires ophthalmology care"
+          }
+        ],
+        "allergies": ["Sulfasalazine", "Topical steroids"],
+        "currentMedications": [
+          {
+            "name": "Etanercept",
+            "dosage": "50mg",
+            "frequency": "Weekly injection",
+            "startDate": "2020-01-15"
+          },
+          {
+            "name": "Prednisolone eye drops",
+            "dosage": "1%",
+            "frequency": "As needed for flares",
+            "startDate": "2020-12-10"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "SBI Health Insurance",
+        "policyNumber": "SB321789654",
+        "validUntil": "2026-08-31"
+      }
+    },
+    {
+      "patientId": "PAT-066",
+      "personalInfo": {
+        "firstName": "Patralekhaa",
+        "lastName": "Paul",
+        "age": 35,
+        "gender": "Female",
+        "dateOfBirth": "1989-02-20",
+        "bloodType": "A-",
+        "phone": "+91-9876543210",
+        "email": "patralekhaa.paul@email.com",
+        "emergencyContact": {
+          "name": "Rajkummar Rao",
+          "relationship": "Spouse",
+          "phone": "+91-9876543209"
+        }
+      },
+      "address": {
+        "street": "5167, Lokhandwala",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400053",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Polycystic Ovary Syndrome",
+            "diagnosedDate": "2015-07-12",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Insulin resistance, irregular cycles"
+          },
+          {
+            "condition": "Hashimoto's Thyroiditis",
+            "diagnosedDate": "2018-04-08",
+            "severity": "Mild",
+            "status": "Stable",
+            "notes": "Autoimmune thyroiditis, euthyroid on therapy"
+          }
+        ],
+        "allergies": ["Metformin", "Spironolactone"],
+        "currentMedications": [
+          {
+            "name": "Levothyroxine",
+            "dosage": "50mcg",
+            "frequency": "Once daily",
+            "startDate": "2018-05-01"
+          },
+          {
+            "name": "Inositol",
+            "dosage": "4g",
+            "frequency": "Twice daily",
+            "startDate": "2015-08-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "National Insurance",
+        "policyNumber": "NI987654321",
+        "validUntil": "2026-02-20"
+      }
+    },
+    {
+      "patientId": "PAT-067",
+      "personalInfo": {
+        "firstName": "Kartik",
+        "lastName": "Aaryan",
+        "age": 34,
+        "gender": "Male",
+        "dateOfBirth": "1990-11-22",
+        "bloodType": "B+",
+        "phone": "+91-8765432109",
+        "email": "kartik.aaryan@email.com",
+        "emergencyContact": {
+          "name": "Mala Tiwari",
+          "relationship": "Mother",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "5278, Versova",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400061",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "COVID-19 (Severe)",
+            "diagnosedDate": "2021-04-15",
+            "severity": "Severe",
+            "status": "Recovered",
+            "notes": "Required hospitalization, oxygen support"
+          },
+          {
+            "condition": "Post-COVID Pulmonary Fibrosis",
+            "diagnosedDate": "2021-07-20",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Lung scarring, pulmonary rehabilitation"
+          }
+        ],
+        "allergies": ["Remdesivir", "Steroids"],
+        "currentMedications": [
+          {
+            "name": "Pirfenidone",
+            "dosage": "267mg",
+            "frequency": "Three times daily",
+            "startDate": "2021-08-15"
+          },
+          {
+            "name": "N-Acetylcysteine",
+            "dosage": "600mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-08-15"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Liberty General Insurance",
+        "policyNumber": "LG789123456",
+        "validUntil": "2026-11-22"
+      }
+    },
+    {
+      "patientId": "PAT-068",
+      "personalInfo": {
+        "firstName": "Sara",
+        "lastName": "Ali Khan",
+        "age": 29,
+        "gender": "Female",
+        "dateOfBirth": "1995-08-12",
+        "bloodType": "AB+",
+        "phone": "+91-7654321098",
+        "email": "sara.ali.khan@email.com",
+        "emergencyContact": {
+          "name": "Amrita Singh",
+          "relationship": "Mother",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "5389, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Borderline Personality Disorder",
+            "diagnosedDate": "2020-05-30",
+            "severity": "Moderate",
+            "status": "In Therapy",
+            "notes": "Dialectical behavior therapy, emotional regulation"
+          },
+          {
+            "condition": "Eating Disorder (Bulimia)",
+            "diagnosedDate": "2018-12-18",
+            "severity": "Moderate",
+            "status": "Recovery",
+            "notes": "Binge-purge cycles, nutritional counseling"
+          }
+        ],
+        "allergies": ["SSRIs", "Certain food additives"],
+        "currentMedications": [
+          {
+            "name": "Dialectical Behavior Therapy",
+            "dosage": "N/A",
+            "frequency": "Twice weekly",
+            "startDate": "2020-06-15"
+          },
+          {
+            "name": "Nutritional supplements",
+            "dosage": "Variable",
+            "frequency": "Daily",
+            "startDate": "2019-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Bharti AXA Health",
+        "policyNumber": "BA456789123",
+        "validUntil": "2026-08-12"
+      }
+    },
+    {
+      "patientId": "PAT-069",
+      "personalInfo": {
+        "firstName": "Janhvi",
+        "lastName": "Kapoor",
+        "age": 27,
+        "gender": "Female",
+        "dateOfBirth": "1997-03-06",
+        "bloodType": "O-",
+        "phone": "+91-6543210987",
+        "email": "janhvi.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Boney Kapoor",
+          "relationship": "Father",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "5490, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Food Poisoning (Severe)",
+            "diagnosedDate": "2022-07-08",
+            "severity": "Severe",
+            "status": "Recovered",
+            "notes": "Hospitalization required, dehydration"
+          },
+          {
+            "condition": "Reactive Arthritis",
+            "diagnosedDate": "2022-08-15",
+            "severity": "Mild",
+            "status": "Resolved",
+            "notes": "Post-infectious arthritis, temporary"
+          }
+        ],
+        "allergies": ["Ciprofloxacin", "Shellfish"],
+        "currentMedications": [
+          {
+            "name": "Probiotics",
+            "dosage": "10 billion CFU",
+            "frequency": "Once daily",
+            "startDate": "2022-09-01"
+          },
+          {
+            "name": "Multivitamin",
+            "dosage": "1 tablet",
+            "frequency": "Once daily",
+            "startDate": "2022-09-01"
+          }
+        ],
+        "lastVisit": "2025-11-15",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Digit General Insurance",
+        "policyNumber": "DG123456789",
+        "validUntil": "2026-03-06"
+      }
+    },
+    {
+      "patientId": "PAT-070",
+      "personalInfo": {
+        "firstName": "Ishaan",
+        "lastName": "Khatter",
+        "age": 29,
+        "gender": "Male",
+        "dateOfBirth": "1995-11-01",
+        "bloodType": "A+",
+        "phone": "+91-5432109876",
+        "email": "ishaan.khatter@email.com",
+        "emergencyContact": {
+          "name": "Neliima Azeem",
+          "relationship": "Mother",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "5601, Juhu Tara Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Torn ACL (Right Knee)",
+            "diagnosedDate": "2023-03-20",
+            "severity": "Moderate",
+            "status": "Post-Surgery",
+            "notes": "Sports injury, ACL reconstruction completed"
+          },
+          {
+            "condition": "Chronic Pain Syndrome",
+            "diagnosedDate": "2023-08-10",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Post-surgical pain, physiotherapy ongoing"
+          }
+        ],
+        "allergies": ["Opioid analgesics", "Local anesthetics"],
+        "currentMedications": [
+          {
+            "name": "Ibuprofen",
+            "dosage": "400mg",
+            "frequency": "Three times daily",
+            "startDate": "2023-04-01"
+          },
+          {
+            "name": "Physiotherapy",
+            "dosage": "N/A",
+            "frequency": "Three times weekly",
+            "startDate": "2023-04-15"
+          }
+        ],
+        "lastVisit": "2025-11-14",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "IFFCO Tokio Health",
+        "policyNumber": "IT987321654",
+        "validUntil": "2026-11-01"
+      }
+    },
+    {
+      "patientId": "PAT-071",
+      "personalInfo": {
+        "firstName": "Radhika",
+        "lastName": "Apte",
+        "age": 39,
+        "gender": "Female",
+        "dateOfBirth": "1985-09-07",
+        "bloodType": "B-",
+        "phone": "+91-4321098765",
+        "email": "radhika.apte@email.com",
+        "emergencyContact": {
+          "name": "Benedict Taylor",
+          "relationship": "Spouse",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "5712, Bandra East",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400051",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Endometriosis (Stage 4)",
+            "diagnosedDate": "2020-01-15",
+            "severity": "Severe",
+            "status": "Managed",
+            "notes": "Deep infiltrating endometriosis, multiple surgeries"
+          },
+          {
+            "condition": "Adenomyosis",
+            "diagnosedDate": "2021-06-20",
+            "severity": "Moderate",
+            "status": "Treatment",
+            "notes": "Uterine adenomyosis, heavy menstrual bleeding"
+          }
+        ],
+        "allergies": ["GnRH agonists", "NSAIDs"],
+        "currentMedications": [
+          {
+            "name": "Dienogest",
+            "dosage": "2mg",
+            "frequency": "Once daily",
+            "startDate": "2021-07-01"
+          },
+          {
+            "name": "Iron supplements",
+            "dosage": "65mg",
+            "frequency": "Once daily",
+            "startDate": "2021-07-01"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "Go Digit Health",
+        "policyNumber": "GD789321456",
+        "validUntil": "2026-09-07"
+      }
+    },
+    {
+      "patientId": "PAT-072",
+      "personalInfo": {
+        "firstName": "Nawazuddin",
+        "lastName": "Siddiqui",
+        "age": 50,
+        "gender": "Male",
+        "dateOfBirth": "1974-05-19",
+        "bloodType": "AB-",
+        "phone": "+91-3210987654",
+        "email": "nawazuddin.siddiqui@email.com",
+        "emergencyContact": {
+          "name": "Aaliya Siddiqui",
+          "relationship": "Ex-spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "5823, Versova",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400061",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Hepatitis B (Chronic)",
+            "diagnosedDate": "2019-03-12",
+            "severity": "Moderate",
+            "status": "Controlled",
+            "notes": "Chronic HBV infection, viral load suppressed"
+          },
+          {
+            "condition": "Liver Fibrosis (Stage 2)",
+            "diagnosedDate": "2021-08-25",
+            "severity": "Moderate",
+            "status": "Monitored",
+            "notes": "Secondary to chronic hepatitis B"
+          }
+        ],
+        "allergies": ["Interferon", "Alcohol"],
+        "currentMedications": [
+          {
+            "name": "Tenofovir",
+            "dosage": "300mg",
+            "frequency": "Once daily",
+            "startDate": "2019-04-01"
+          },
+          {
+            "name": "Milk thistle",
+            "dosage": "200mg",
+            "frequency": "Twice daily",
+            "startDate": "2019-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Aditya Birla Health",
+        "policyNumber": "AB456123789",
+        "validUntil": "2026-05-19"
+      }
+    },
+    {
+      "patientId": "PAT-073",
+      "personalInfo": {
+        "firstName": "Richa",
+        "lastName": "Chadha",
+        "age": 38,
+        "gender": "Female",
+        "dateOfBirth": "1986-12-18",
+        "bloodType": "O+",
+        "phone": "+91-2109876543",
+        "email": "richa.chadha@email.com",
+        "emergencyContact": {
+          "name": "Ali Fazal",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "5934, Khar West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400052",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Uterine Fibroids (Multiple)",
+            "diagnosedDate": "2022-04-10",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Intramural fibroids, menorrhagia"
+          },
+          {
+            "condition": "Iron Deficiency Anemia",
+            "diagnosedDate": "2022-05-18",
+            "severity": "Moderate",
+            "status": "Treatment",
+            "notes": "Secondary to heavy menstrual bleeding"
+          }
+        ],
+        "allergies": ["Hormonal IUD", "Iron sulfate"],
+        "currentMedications": [
+          {
+            "name": "Tranexamic acid",
+            "dosage": "500mg",
+            "frequency": "Three times daily during menses",
+            "startDate": "2022-06-01"
+          },
+          {
+            "name": "Iron bisglycinate",
+            "dosage": "25mg",
+            "frequency": "Once daily",
+            "startDate": "2022-06-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Manipal Cigna Health",
+        "policyNumber": "MC789654321",
+        "validUntil": "2026-12-18"
+      }
+    },
+    {
+      "patientId": "PAT-074",
+      "personalInfo": {
+        "firstName": "Ali",
+        "lastName": "Fazal",
+        "age": 38,
+        "gender": "Male",
+        "dateOfBirth": "1986-10-15",
+        "bloodType": "A-",
+        "phone": "+91-1098765432",
+        "email": "ali.fazal@email.com",
+        "emergencyContact": {
+          "name": "Richa Chadha",
+          "relationship": "Spouse",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "6045, Lokhandwala",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400053",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Crohn's Disease",
+            "diagnosedDate": "2021-07-22",
+            "severity": "Moderate",
+            "status": "Remission",
+            "notes": "Terminal ileum involvement, responds to biologics"
+          },
+          {
+            "condition": "Sacroiliitis",
+            "diagnosedDate": "2022-11-08",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "IBD-associated arthropathy"
+          }
+        ],
+        "allergies": ["Mesalamine", "Corticosteroids"],
+        "currentMedications": [
+          {
+            "name": "Ustekinumab",
+            "dosage": "90mg",
+            "frequency": "Every 12 weeks (injection)",
+            "startDate": "2022-01-15"
+          },
+          {
+            "name": "Azathioprine",
+            "dosage": "50mg",
+            "frequency": "Once daily",
+            "startDate": "2021-08-15"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Universal Sompo Health",
+        "policyNumber": "US321654987",
+        "validUntil": "2026-10-15"
+      }
+    },
+    {
+      "patientId": "PAT-075",
+      "personalInfo": {
+        "firstName": "Pankaj",
+        "lastName": "Tripathi",
+        "age": 48,
+        "gender": "Male",
+        "dateOfBirth": "1976-09-05",
+        "bloodType": "B+",
+        "phone": "+91-9876543210",
+        "email": "pankaj.tripathi@email.com",
+        "emergencyContact": {
+          "name": "Mridula Tripathi",
+          "relationship": "Spouse",
+          "phone": "+91-9876543209"
+        }
+      },
+      "address": {
+        "street": "6156, Goregaon West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400062",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Type 2 Diabetes Mellitus",
+            "diagnosedDate": "2020-02-18",
+            "severity": "Moderate",
+            "status": "Well-controlled",
+            "notes": "Diet and lifestyle managed, HbA1c < 7%"
+          },
+          {
+            "condition": "Diabetic Nephropathy (Stage 2)",
+            "diagnosedDate": "2023-06-12",
+            "severity": "Mild",
+            "status": "Monitored",
+            "notes": "Microalbuminuria present, ACE inhibitor started"
+          }
+        ],
+        "allergies": ["Sulfonylureas", "Contrast dye"],
+        "currentMedications": [
+          {
+            "name": "Metformin",
+            "dosage": "1000mg",
+            "frequency": "Twice daily",
+            "startDate": "2020-03-01"
+          },
+          {
+            "name": "Lisinopril",
+            "dosage": "10mg",
+            "frequency": "Once daily",
+            "startDate": "2023-07-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Kotak Health Insurance",
+        "policyNumber": "KH987456321",
+        "validUntil": "2026-09-05"
+      }
+    },
+    {
+      "patientId": "PAT-076",
+      "personalInfo": {
+        "firstName": "Manoj",
+        "lastName": "Bajpayee",
+        "age": 55,
+        "gender": "Male",
+        "dateOfBirth": "1969-04-23",
+        "bloodType": "AB+",
+        "phone": "+91-8765432109",
+        "email": "manoj.bajpayee@email.com",
+        "emergencyContact": {
+          "name": "Shabana Raza",
+          "relationship": "Spouse",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "6267, Andheri West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400058",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Gastric Cancer (Stage 2)",
+            "diagnosedDate": "2023-01-20",
+            "severity": "High",
+            "status": "Post-Surgery",
+            "notes": "Partial gastrectomy, adjuvant chemotherapy completed"
+          },
+          {
+            "condition": "Dumping Syndrome",
+            "diagnosedDate": "2023-04-15",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Post-gastrectomy complication, dietary modifications"
+          }
+        ],
+        "allergies": ["5-FU", "Cisplatin"],
+        "currentMedications": [
+          {
+            "name": "Pancreatic enzymes",
+            "dosage": "25,000 units",
+            "frequency": "With meals",
+            "startDate": "2023-05-01"
+          },
+          {
+            "name": "Vitamin B12",
+            "dosage": "1000mcg",
+            "frequency": "Monthly injection",
+            "startDate": "2023-05-01"
+          }
+        ],
+        "lastVisit": "2025-11-23",
+        "riskLevel": "High"
+      },
+      "insurance": {
+        "provider": "ManipalCigna Health",
+        "policyNumber": "MC654321789",
+        "validUntil": "2026-04-23"
+      }
+    },
+    {
+      "patientId": "PAT-077",
+      "personalInfo": {
+        "firstName": "Kalki",
+        "lastName": "Koechlin",
+        "age": 41,
+        "gender": "Female",
+        "dateOfBirth": "1984-01-10",
+        "bloodType": "O-",
+        "phone": "+91-7654321098",
+        "email": "kalki.koechlin@email.com",
+        "emergencyContact": {
+          "name": "Guy Hershberg",
+          "relationship": "Partner",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "6378, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Postpartum Depression",
+            "diagnosedDate": "2020-03-25",
+            "severity": "Moderate",
+            "status": "Recovered",
+            "notes": "Treated with therapy and medication, fully recovered"
+          },
+          {
+            "condition": "Hypothyroidism",
+            "diagnosedDate": "2021-08-14",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Post-pregnancy thyroid dysfunction"
+          }
+        ],
+        "allergies": ["Tricyclic antidepressants", "Iodine"],
+        "currentMedications": [
+          {
+            "name": "Levothyroxine",
+            "dosage": "50mcg",
+            "frequency": "Once daily",
+            "startDate": "2021-09-01"
+          },
+          {
+            "name": "Vitamin D3",
+            "dosage": "1000 IU",
+            "frequency": "Once daily",
+            "startDate": "2021-09-01"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Niva Bupa Health",
+        "policyNumber": "NB321789456",
+        "validUntil": "2026-01-10"
+      }
+    },
+    {
+      "patientId": "PAT-078",
+      "personalInfo": {
+        "firstName": "Jim",
+        "lastName": "Sarbh",
+        "age": 37,
+        "gender": "Male",
+        "dateOfBirth": "1987-08-27",
+        "bloodType": "A+",
+        "phone": "+91-6543210987",
+        "email": "jim.sarbh@email.com",
+        "emergencyContact": {
+          "name": "Zubin Sarbh",
+          "relationship": "Brother",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "6489, Colaba",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400005",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Generalized Anxiety Disorder",
+            "diagnosedDate": "2018-11-12",
+            "severity": "Moderate",
+            "status": "Well-managed",
+            "notes": "Performance anxiety, stage fright managed well"
+          },
+          {
+            "condition": "Irritable Bowel Syndrome",
+            "diagnosedDate": "2019-07-08",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Stress-related, dietary modifications helpful"
+          }
+        ],
+        "allergies": ["Benzodiazepines", "Lactose"],
+        "currentMedications": [
+          {
+            "name": "Escitalopram",
+            "dosage": "10mg",
+            "frequency": "Once daily",
+            "startDate": "2018-12-01"
+          },
+          {
+            "name": "Probiotics",
+            "dosage": "50 billion CFU",
+            "frequency": "Once daily",
+            "startDate": "2019-08-01"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Reliance Health Insurance",
+        "policyNumber": "RH789123654",
+        "validUntil": "2026-08-27"
+      }
+    },
+    {
+      "patientId": "PAT-079",
+      "personalInfo": {
+        "firstName": "Tillotama",
+        "lastName": "Shome",
+        "age": 46,
+        "gender": "Female",
+        "dateOfBirth": "1979-07-25",
+        "bloodType": "B-",
+        "phone": "+91-5432109876",
+        "email": "tillotama.shome@email.com",
+        "emergencyContact": {
+          "name": "Kunal Ross",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "6590, Santacruz West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400054",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Chronic Fatigue Syndrome",
+            "diagnosedDate": "2020-09-18",
+            "severity": "Moderate",
+            "status": "Managed",
+            "notes": "Post-viral fatigue, graded exercise therapy"
+          },
+          {
+            "condition": "Fibromyalgia",
+            "diagnosedDate": "2021-02-22",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Widespread pain, responds to multimodal therapy"
+          }
+        ],
+        "allergies": ["Tramadol", "Amitriptyline"],
+        "currentMedications": [
+          {
+            "name": "Pregabalin",
+            "dosage": "75mg",
+            "frequency": "Twice daily",
+            "startDate": "2021-03-15"
+          },
+          {
+            "name": "Coenzyme Q10",
+            "dosage": "100mg",
+            "frequency": "Once daily",
+            "startDate": "2020-10-01"
+          }
+        ],
+        "lastVisit": "2025-11-15",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Bajaj Allianz Health",
+        "policyNumber": "BA654987123",
+        "validUntil": "2026-07-25"
+      }
+    },
+    {
+      "patientId": "PAT-080",
+      "personalInfo": {
+        "firstName": "Vikrant",
+        "lastName": "Massey",
+        "age": 37,
+        "gender": "Male",
+        "dateOfBirth": "1987-04-03",
+        "bloodType": "AB-",
+        "phone": "+91-4321098765",
+        "email": "vikrant.massey@email.com",
+        "emergencyContact": {
+          "name": "Sheetal Thakur",
+          "relationship": "Spouse",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "6701, Powai",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400076",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Herniated Disc (L5-S1)",
+            "diagnosedDate": "2022-05-14",
+            "severity": "Moderate",
+            "status": "Conservative Treatment",
+            "notes": "Sciatica, avoided surgery with physiotherapy"
+          },
+          {
+            "condition": "Chronic Lower Back Pain",
+            "diagnosedDate": "2022-06-20",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Ergonomic modifications, exercise therapy"
+          }
+        ],
+        "allergies": ["Muscle relaxants", "Opioids"],
+        "currentMedications": [
+          {
+            "name": "Diclofenac gel",
+            "dosage": "1%",
+            "frequency": "Topical, twice daily",
+            "startDate": "2022-06-01"
+          },
+          {
+            "name": "Physiotherapy",
+            "dosage": "N/A",
+            "frequency": "Twice weekly",
+            "startDate": "2022-06-15"
+          }
+        ],
+        "lastVisit": "2025-11-14",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "HDFC Ergo Health",
+        "policyNumber": "HE123789456",
+        "validUntil": "2026-04-03"
+      }
+    },
+    {
+      "patientId": "PAT-081",
+      "personalInfo": {
+        "firstName": "Sanya",
+        "lastName": "Malhotra",
+        "age": 32,
+        "gender": "Female",
+        "dateOfBirth": "1992-02-25",
+        "bloodType": "O+",
+        "phone": "+91-3210987654",
+        "email": "sanya.malhotra@email.com",
+        "emergencyContact": {
+          "name": "Vinod Malhotra",
+          "relationship": "Father",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "6812, Andheri West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400058",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Celiac Disease",
+            "diagnosedDate": "2021-03-10",
+            "severity": "Moderate",
+            "status": "Well-controlled",
+            "notes": "Strict gluten-free diet, intestinal healing confirmed"
+          },
+          {
+            "condition": "Osteoporosis",
+            "diagnosedDate": "2022-11-18",
+            "severity": "Mild",
+            "status": "Treatment",
+            "notes": "Secondary to malabsorption, improving with supplements"
+          }
+        ],
+        "allergies": ["Gluten", "Wheat proteins"],
+        "currentMedications": [
+          {
+            "name": "Calcium carbonate",
+            "dosage": "1200mg",
+            "frequency": "Twice daily",
+            "startDate": "2022-12-01"
+          },
+          {
+            "name": "Vitamin D3",
+            "dosage": "4000 IU",
+            "frequency": "Once daily",
+            "startDate": "2022-12-01"
+          }
+        ],
+        "lastVisit": "2025-11-22",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Star Health Insurance",
+        "policyNumber": "SH321987654",
+        "validUntil": "2026-02-25"
+      }
+    },
+    {
+      "patientId": "PAT-082",
+      "personalInfo": {
+        "firstName": "Fatima",
+        "lastName": "Sana Shaikh",
+        "age": 32,
+        "gender": "Female",
+        "dateOfBirth": "1992-01-11",
+        "bloodType": "A-",
+        "phone": "+91-2109876543",
+        "email": "fatima.sana.shaikh@email.com",
+        "emergencyContact": {
+          "name": "Sana Shaikh",
+          "relationship": "Sister",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "6923, Malad West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400064",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Epilepsy (Temporal Lobe)",
+            "diagnosedDate": "2009-06-15",
+            "severity": "Moderate",
+            "status": "Well-controlled",
+            "notes": "Complex partial seizures, seizure-free for 5+ years"
+          },
+          {
+            "condition": "Memory Impairment",
+            "diagnosedDate": "2018-09-20",
+            "severity": "Mild",
+            "status": "Stable",
+            "notes": "Related to temporal lobe epilepsy and medications"
+          }
+        ],
+        "allergies": ["Phenytoin", "Carbamazepine"],
+        "currentMedications": [
+          {
+            "name": "Levetiracetam",
+            "dosage": "1000mg",
+            "frequency": "Twice daily",
+            "startDate": "2015-03-01"
+          },
+          {
+            "name": "Folic acid",
+            "dosage": "5mg",
+            "frequency": "Once daily",
+            "startDate": "2015-03-01"
+          }
+        ],
+        "lastVisit": "2025-11-21",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "Max Bupa Health",
+        "policyNumber": "MB987654321",
+        "validUntil": "2026-01-11"
+      }
+    },
+    {
+      "patientId": "PAT-083",
+      "personalInfo": {
+        "firstName": "Bhumi",
+        "lastName": "Pednekar",
+        "age": 35,
+        "gender": "Female",
+        "dateOfBirth": "1989-07-18",
+        "bloodType": "B+",
+        "phone": "+91-1098765432",
+        "email": "bhumi.pednekar@email.com",
+        "emergencyContact": {
+          "name": "Sumitra Pednekar",
+          "relationship": "Mother",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "7034, Dadar West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400028",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Polycystic Ovary Syndrome",
+            "diagnosedDate": "2015-04-22",
+            "severity": "Moderate",
+            "status": "Well-managed",
+            "notes": "Weight management successful, cycles regular"
+          },
+          {
+            "condition": "Insulin Resistance",
+            "diagnosedDate": "2015-05-10",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Diet and exercise modifications effective"
+          }
+        ],
+        "allergies": ["Metformin", "Spironolactone"],
+        "currentMedications": [
+          {
+            "name": "Myo-inositol",
+            "dosage": "2g",
+            "frequency": "Twice daily",
+            "startDate": "2020-01-01"
+          },
+          {
+            "name": "Chromium picolinate",
+            "dosage": "200mcg",
+            "frequency": "Once daily",
+            "startDate": "2020-01-01"
+          }
+        ],
+        "lastVisit": "2025-11-20",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "ICICI Lombard Health",
+        "policyNumber": "IL456789123",
+        "validUntil": "2026-07-18"
+      }
+    },
+    {
+      "patientId": "PAT-084",
+      "personalInfo": {
+        "firstName": "Kriti",
+        "lastName": "Sanon",
+        "age": 34,
+        "gender": "Female",
+        "dateOfBirth": "1990-07-27",
+        "bloodType": "AB+",
+        "phone": "+91-9876543210",
+        "email": "kriti.sanon@email.com",
+        "emergencyContact": {
+          "name": "Nupur Sanon",
+          "relationship": "Sister",
+          "phone": "+91-9876543209"
+        }
+      },
+      "address": {
+        "street": "7145, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Autoimmune Thyroiditis",
+            "diagnosedDate": "2019-01-25",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Hashimoto's thyroiditis, euthyroid on treatment"
+          },
+          {
+            "condition": "Vitamin B12 Deficiency",
+            "diagnosedDate": "2020-08-12",
+            "severity": "Moderate",
+            "status": "Corrected",
+            "notes": "Pernicious anemia, B12 injections required"
+          }
+        ],
+        "allergies": ["Levothyroxine brand switching", "Cyanocobalamin"],
+        "currentMedications": [
+          {
+            "name": "Levothyroxine",
+            "dosage": "75mcg",
+            "frequency": "Once daily",
+            "startDate": "2019-02-15"
+          },
+          {
+            "name": "Methylcobalamin",
+            "dosage": "1500mcg",
+            "frequency": "Monthly injection",
+            "startDate": "2020-09-01"
+          }
+        ],
+        "lastVisit": "2025-11-19",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Apollo Munich Health",
+        "policyNumber": "AM123654789",
+        "validUntil": "2026-07-27"
+      }
+    },
+    {
+      "patientId": "PAT-085",
+      "personalInfo": {
+        "firstName": "Ananya",
+        "lastName": "Panday",
+        "age": 26,
+        "gender": "Female",
+        "dateOfBirth": "1998-10-30",
+        "bloodType": "O-",
+        "phone": "+91-8765432109",
+        "email": "ananya.panday@email.com",
+        "emergencyContact": {
+          "name": "Chunky Panday",
+          "relationship": "Father",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "7256, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Anxiety Disorder",
+            "diagnosedDate": "2021-05-18",
+            "severity": "Mild",
+            "status": "Well-managed",
+            "notes": "Social anxiety, public speaking concerns"
+          },
+          {
+            "condition": "Iron Deficiency Anemia",
+            "diagnosedDate": "2022-01-20",
+            "severity": "Mild",
+            "status": "Resolved",
+            "notes": "Dietary deficiency, corrected with supplements"
+          }
+        ],
+        "allergies": ["Beta-blockers", "Iron sulfate"],
+        "currentMedications": [
+          {
+            "name": "Cognitive Behavioral Therapy",
+            "dosage": "N/A",
+            "frequency": "Bi-weekly sessions",
+            "startDate": "2021-06-01"
+          },
+          {
+            "name": "Iron bisglycinate",
+            "dosage": "18mg",
+            "frequency": "Once daily",
+            "startDate": "2022-02-01"
+          }
+        ],
+        "lastVisit": "2025-11-18",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Religare Health",
+        "policyNumber": "RH654321987",
+        "validUntil": "2026-10-30"
+      }
+    },
+    {
+      "patientId": "PAT-086",
+      "personalInfo": {
+        "firstName": "Tiger",
+        "lastName": "Shroff",
+        "age": 34,
+        "gender": "Male",
+        "dateOfBirth": "1990-03-02",
+        "bloodType": "A+",
+        "phone": "+91-7654321098",
+        "email": "tiger.shroff@email.com",
+        "emergencyContact": {
+          "name": "Jackie Shroff",
+          "relationship": "Father",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "7367, Khar West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400052",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Multiple Sports Injuries",
+            "diagnosedDate": "2018-11-30",
+            "severity": "Moderate",
+            "status": "Chronic Management",
+            "notes": "Recurrent shoulder dislocations, knee injuries"
+          },
+          {
+            "condition": "Chronic Joint Pain",
+            "diagnosedDate": "2020-07-15",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Action sequences impact, physiotherapy ongoing"
+          }
+        ],
+        "allergies": ["Cortisone injections", "NSAIDs"],
+        "currentMedications": [
+          {
+            "name": "Turmeric supplements",
+            "dosage": "500mg",
+            "frequency": "Twice daily",
+            "startDate": "2020-08-01"
+          },
+          {
+            "name": "Sports physiotherapy",
+            "dosage": "N/A",
+            "frequency": "Daily sessions",
+            "startDate": "2018-12-01"
+          }
+        ],
+        "lastVisit": "2025-11-17",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Oriental Insurance",
+        "policyNumber": "OI321456789",
+        "validUntil": "2026-03-02"
+      }
+    },
+    {
+      "patientId": "PAT-087",
+      "personalInfo": {
+        "firstName": "Disha",
+        "lastName": "Patani",
+        "age": 32,
+        "gender": "Female",
+        "dateOfBirth": "1992-06-13",
+        "bloodType": "B-",
+        "phone": "+91-6543210987",
+        "email": "disha.patani@email.com",
+        "emergencyContact": {
+          "name": "Jagdish Patani",
+          "relationship": "Father",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "7478, Bandra East",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400051",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Exercise-Induced Asthma",
+            "diagnosedDate": "2019-04-08",
+            "severity": "Mild",
+            "status": "Well-controlled",
+            "notes": "Triggered by intense cardio, preventive inhaler use"
+          },
+          {
+            "condition": "Nutritional Deficiencies",
+            "diagnosedDate": "2021-12-22",
+            "severity": "Mild",
+            "status": "Corrected",
+            "notes": "Strict diet for films, now balanced nutrition"
+          }
+        ],
+        "allergies": ["Certain protein powders", "Artificial sweeteners"],
+        "currentMedications": [
+          {
+            "name": "Salbutamol inhaler",
+            "dosage": "100mcg",
+            "frequency": "Before exercise",
+            "startDate": "2019-05-01"
+          },
+          {
+            "name": "Multivitamin complex",
+            "dosage": "1 tablet",
+            "frequency": "Once daily",
+            "startDate": "2022-01-15"
+          }
+        ],
+        "lastVisit": "2025-11-16",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "New India Assurance",
+        "policyNumber": "NI789456123",
+        "validUntil": "2026-06-13"
+      }
+    },
+    {
+      "patientId": "PAT-088",
+      "personalInfo": {
+        "firstName": "Varun",
+        "lastName": "Dhawan",
+        "age": 37,
+        "gender": "Male",
+        "dateOfBirth": "1987-04-24",
+        "bloodType": "AB-",
+        "phone": "+91-5432109876",
+        "email": "varun.dhawan@email.com",
+        "emergencyContact": {
+          "name": "Natasha Dalal",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "7589, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Vestibular Disorder",
+            "diagnosedDate": "2022-06-14",
+            "severity": "Moderate",
+            "status": "Improving",
+            "notes": "Balance issues, vertigo episodes"
+          },
+          {
+            "condition": "Tension Headaches",
+            "diagnosedDate": "2020-03-18",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Stress and work schedule related"
+          }
+        ],
+        "allergies": ["Antihistamines", "Motion sickness medications"],
+        "currentMedications": [
+          {
+            "name": "Betahistine",
+            "dosage": "24mg",
+            "frequency": "Twice daily",
+            "startDate": "2022-07-01"
+          },
+          {
+            "name": "Magnesium oxide",
+            "dosage": "400mg",
+            "frequency": "Once daily",
+            "startDate": "2020-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-15",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "United India Insurance",
+        "policyNumber": "UI456789321",
+        "validUntil": "2026-04-24"
+      }
+    },
+    {
+      "patientId": "PAT-089",
+      "personalInfo": {
+        "firstName": "Shraddha",
+        "lastName": "Kapoor",
+        "age": 37,
+        "gender": "Female",
+        "dateOfBirth": "1987-03-03",
+        "bloodType": "O+",
+        "phone": "+91-4321098765",
+        "email": "shraddha.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Shakti Kapoor",
+          "relationship": "Father",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "7690, Juhu",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400049",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Dengue Fever (Severe)",
+            "diagnosedDate": "2020-09-25",
+            "severity": "Severe",
+            "status": "Recovered",
+            "notes": "Hospitalization required, platelet count dropped critically"
+          },
+          {
+            "condition": "Post-Dengue Fatigue Syndrome",
+            "diagnosedDate": "2020-12-10",
+            "severity": "Moderate",
+            "status": "Resolved",
+            "notes": "Prolonged weakness and fatigue, fully recovered"
+          }
+        ],
+        "allergies": ["Platelet transfusion reactions", "Mosquito repellents"],
+        "currentMedications": [
+          {
+            "name": "Iron supplements",
+            "dosage": "65mg",
+            "frequency": "Once daily",
+            "startDate": "2021-01-15"
+          },
+          {
+            "name": "Vitamin C",
+            "dosage": "1000mg",
+            "frequency": "Once daily",
+            "startDate": "2021-01-15"
+          }
+        ],
+        "lastVisit": "2025-11-14",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Tata AIG Health",
+        "policyNumber": "TA321654789",
+        "validUntil": "2026-03-03"
+      }
+    },
+    {
+      "patientId": "PAT-090",
+      "personalInfo": {
+        "firstName": "Sidharth",
+        "lastName": "Malhotra",
+        "age": 40,
+        "gender": "Male",
+        "dateOfBirth": "1985-01-16",
+        "bloodType": "A-",
+        "phone": "+91-3210987654",
+        "email": "sidharth.malhotra@email.com",
+        "emergencyContact": {
+          "name": "Kiara Advani",
+          "relationship": "Spouse",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "7801, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Shoulder Impingement Syndrome",
+            "diagnosedDate": "2021-08-30",
+            "severity": "Moderate",
+            "status": "Recovered",
+            "notes": "Action sequences injury, avoided surgery with PT"
+          },
+          {
+            "condition": "Chronic Neck Pain",
+            "diagnosedDate": "2022-02-18",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Poor posture, ergonomic corrections made"
+          }
+        ],
+        "allergies": ["Muscle relaxants", "Topical capsaicin"],
+        "currentMedications": [
+          {
+            "name": "Physical therapy",
+            "dosage": "N/A",
+            "frequency": "Twice weekly",
+            "startDate": "2021-09-15"
+          },
+          {
+            "name": "Omega-3 supplements",
+            "dosage": "1000mg",
+            "frequency": "Once daily",
+            "startDate": "2022-03-01"
+          }
+        ],
+        "lastVisit": "2025-11-13",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Cholamandalam MS Health",
+        "policyNumber": "CM654987321",
+        "validUntil": "2026-01-16"
+      }
+    },
+    {
+      "patientId": "PAT-091",
+      "personalInfo": {
+        "firstName": "Kiara",
+        "lastName": "Advani",
+        "age": 32,
+        "gender": "Female",
+        "dateOfBirth": "1992-07-31",
+        "bloodType": "B+",
+        "phone": "+91-2109876543",
+        "email": "kiara.advani@email.com",
+        "emergencyContact": {
+          "name": "Sidharth Malhotra",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "7912, Khar West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400052",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Lactose Intolerance",
+            "diagnosedDate": "2018-05-20",
+            "severity": "Moderate",
+            "status": "Well-managed",
+            "notes": "Dietary restrictions, lactase enzyme supplements"
+          },
+          {
+            "condition": "Seasonal Allergic Rhinitis",
+            "diagnosedDate": "2015-03-15",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Pollen allergies, seasonal antihistamines"
+          }
+        ],
+        "allergies": ["Dairy products", "Tree pollen"],
+        "currentMedications": [
+          {
+            "name": "Lactase enzyme",
+            "dosage": "9000 FCC units",
+            "frequency": "With dairy consumption",
+            "startDate": "2018-06-01"
+          },
+          {
+            "name": "Cetirizine",
+            "dosage": "10mg",
+            "frequency": "During allergy season",
+            "startDate": "2015-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-12",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Future Generali Health",
+        "policyNumber": "FG789123456",
+        "validUntil": "2026-07-31"
+      }
+    },
+    {
+      "patientId": "PAT-092",
+      "personalInfo": {
+        "firstName": "Arjun",
+        "lastName": "Kapoor",
+        "age": 39,
+        "gender": "Male",
+        "dateOfBirth": "1985-06-26",
+        "bloodType": "AB+",
+        "phone": "+91-1098765432",
+        "email": "arjun.kapoor@email.com",
+        "emergencyContact": {
+          "name": "Malaika Arora",
+          "relationship": "Partner",
+          "phone": "+91-1098765431"
+        }
+      },
+      "address": {
+        "street": "8023, Lokhandwala",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400053",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Obesity (Class I)",
+            "diagnosedDate": "2019-01-20",
+            "severity": "Moderate",
+            "status": "Improving",
+            "notes": "BMI 32, weight loss journey, lifestyle changes"
+          },
+          {
+            "condition": "Sleep Apnea (Mild)",
+            "diagnosedDate": "2020-11-15",
+            "severity": "Mild",
+            "status": "Improving",
+            "notes": "Weight-related, improving with weight loss"
+          }
+        ],
+        "allergies": ["Certain diet pills", "Sleep medications"],
+        "currentMedications": [
+          {
+            "name": "Nutritionist consultation",
+            "dosage": "N/A",
+            "frequency": "Monthly",
+            "startDate": "2019-02-01"
+          },
+          {
+            "name": "Personal training",
+            "dosage": "N/A",
+            "frequency": "5 times weekly",
+            "startDate": "2019-02-01"
+          }
+        ],
+        "lastVisit": "2025-11-11",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Care Health Insurance",
+        "policyNumber": "CH123789456",
+        "validUntil": "2026-06-26"
+      }
+    },
+    {
+      "patientId": "PAT-093",
+      "personalInfo": {
+        "firstName": "Malaika",
+        "lastName": "Arora",
+        "age": 51,
+        "gender": "Female",
+        "dateOfBirth": "1973-10-23",
+        "bloodType": "O-",
+        "phone": "+91-9876543210",
+        "email": "malaika.arora@email.com",
+        "emergencyContact": {
+          "name": "Arjun Kapoor",
+          "relationship": "Partner",
+          "phone": "+91-9876543209"
+        }
+      },
+      "address": {
+        "street": "8134, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "COVID-19 (Moderate)",
+            "diagnosedDate": "2020-09-10",
+            "severity": "Moderate",
+            "status": "Recovered",
+            "notes": "Home isolation, full recovery with mild long-term effects"
+          },
+          {
+            "condition": "Perimenopause",
+            "diagnosedDate": "2022-04-28",
+            "severity": "Mild",
+            "status": "Natural transition",
+            "notes": "Managing symptoms naturally, hormone level monitoring"
+          }
+        ],
+        "allergies": ["Hormone replacement therapy", "Certain antibiotics"],
+        "currentMedications": [
+          {
+            "name": "Black cohosh",
+            "dosage": "40mg",
+            "frequency": "Once daily",
+            "startDate": "2022-06-01"
+          },
+          {
+            "name": "Calcium with Vitamin D",
+            "dosage": "600mg/400 IU",
+            "frequency": "Twice daily",
+            "startDate": "2022-06-01"
+          }
+        ],
+        "lastVisit": "2025-11-10",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Royal Sundaram Health",
+        "policyNumber": "RS987321654",
+        "validUntil": "2026-10-23"
+      }
+    },
+    {
+      "patientId": "PAT-094",
+      "personalInfo": {
+        "firstName": "Parineeti",
+        "lastName": "Chopra",
+        "age": 36,
+        "gender": "Female",
+        "dateOfBirth": "1988-10-22",
+        "bloodType": "A+",
+        "phone": "+91-8765432109",
+        "email": "parineeti.chopra@email.com",
+        "emergencyContact": {
+          "name": "Raghav Chadha",
+          "relationship": "Spouse",
+          "phone": "+91-8765432108"
+        }
+      },
+      "address": {
+        "street": "8245, Yari Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400061",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Weight Fluctuation Disorder",
+            "diagnosedDate": "2017-06-12",
+            "severity": "Moderate",
+            "status": "Stable",
+            "notes": "Yo-yo dieting history, now maintaining stable weight"
+          },
+          {
+            "condition": "Thyroid Dysfunction",
+            "diagnosedDate": "2018-09-30",
+            "severity": "Mild",
+            "status": "Controlled",
+            "notes": "Subclinical hypothyroidism, lifestyle managed"
+          }
+        ],
+        "allergies": ["Crash diet supplements", "Thyroid hormone"],
+        "currentMedications": [
+          {
+            "name": "Balanced nutrition plan",
+            "dosage": "N/A",
+            "frequency": "Daily",
+            "startDate": "2019-01-01"
+          },
+          {
+            "name": "Iodine supplements",
+            "dosage": "150mcg",
+            "frequency": "Once daily",
+            "startDate": "2018-11-01"
+          }
+        ],
+        "lastVisit": "2025-11-09",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "SBI Health Insurance",
+        "policyNumber": "SB456321789",
+        "validUntil": "2026-10-22"
+      }
+    },
+    {
+      "patientId": "PAT-095",
+      "personalInfo": {
+        "firstName": "Jacqueline",
+        "lastName": "Fernandez",
+        "age": 39,
+        "gender": "Female",
+        "dateOfBirth": "1985-08-11",
+        "bloodType": "B-",
+        "phone": "+91-7654321098",
+        "email": "jacqueline.fernandez@email.com",
+        "emergencyContact": {
+          "name": "Kim Fernandez",
+          "relationship": "Mother",
+          "phone": "+91-7654321097"
+        }
+      },
+      "address": {
+        "street": "8356, Bandra West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Eating Disorder (Restrictive)",
+            "diagnosedDate": "2016-03-18",
+            "severity": "Moderate",
+            "status": "In Recovery",
+            "notes": "Anorexic tendencies, ongoing therapy and nutritional support"
+          },
+          {
+            "condition": "Exercise Addiction",
+            "diagnosedDate": "2017-11-25",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Compulsive exercise patterns, balanced routine now"
+          }
+        ],
+        "allergies": ["Appetite suppressants", "Stimulant laxatives"],
+        "currentMedications": [
+          {
+            "name": "Nutritional therapy",
+            "dosage": "N/A",
+            "frequency": "Weekly sessions",
+            "startDate": "2016-04-01"
+          },
+          {
+            "name": "Multivitamin",
+            "dosage": "1 tablet",
+            "frequency": "Once daily",
+            "startDate": "2016-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-08",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "National Insurance",
+        "policyNumber": "NI123987456",
+        "validUntil": "2026-08-11"
+      }
+    },
+    {
+      "patientId": "PAT-096",
+      "personalInfo": {
+        "firstName": "Nora",
+        "lastName": "Fatehi",
+        "age": 32,
+        "gender": "Female",
+        "dateOfBirth": "1992-02-06",
+        "bloodType": "AB-",
+        "phone": "+91-6543210987",
+        "email": "nora.fatehi@email.com",
+        "emergencyContact": {
+          "name": "Marta Fatehi",
+          "relationship": "Sister",
+          "phone": "+91-6543210986"
+        }
+      },
+      "address": {
+        "street": "8467, Andheri West",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400058",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Dance-Related Injuries",
+            "diagnosedDate": "2019-07-14",
+            "severity": "Moderate",
+            "status": "Chronic Management",
+            "notes": "Recurring ankle sprains, hip flexor strains"
+          },
+          {
+            "condition": "Chronic Fatigue",
+            "diagnosedDate": "2021-12-08",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Intensive rehearsals and performances impact"
+          }
+        ],
+        "allergies": ["Certain pain medications", "Adhesive bandages"],
+        "currentMedications": [
+          {
+            "name": "Sports massage therapy",
+            "dosage": "N/A",
+            "frequency": "Twice weekly",
+            "startDate": "2019-08-01"
+          },
+          {
+            "name": "Magnesium supplements",
+            "dosage": "400mg",
+            "frequency": "Once daily",
+            "startDate": "2021-12-15"
+          }
+        ],
+        "lastVisit": "2025-11-07",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Liberty General Insurance",
+        "policyNumber": "LG456789321",
+        "validUntil": "2026-02-06"
+      }
+    },
+    {
+      "patientId": "PAT-097",
+      "personalInfo": {
+        "firstName": "Yami",
+        "lastName": "Gautam",
+        "age": 36,
+        "gender": "Female",
+        "dateOfBirth": "1988-11-28",
+        "bloodType": "O+",
+        "phone": "+91-5432109876",
+        "email": "yami.gautam@email.com",
+        "emergencyContact": {
+          "name": "Aditya Dhar",
+          "relationship": "Spouse",
+          "phone": "+91-5432109875"
+        }
+      },
+      "address": {
+        "street": "8578, Shimla Hills",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400050",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Keratosis Pilaris",
+            "diagnosedDate": "2015-04-10",
+            "severity": "Mild",
+            "status": "Managed",
+            "notes": "Genetic skin condition, cosmetic concern mainly"
+          },
+          {
+            "condition": "Vitamin D Deficiency",
+            "diagnosedDate": "2020-01-22",
+            "severity": "Moderate",
+            "status": "Corrected",
+            "notes": "Indoor filming schedule, now supplementing"
+          }
+        ],
+        "allergies": ["Certain skincare products", "Retinoids"],
+        "currentMedications": [
+          {
+            "name": "Urea cream",
+            "dosage": "10%",
+            "frequency": "Twice daily",
+            "startDate": "2015-05-01"
+          },
+          {
+            "name": "Vitamin D3",
+            "dosage": "2000 IU",
+            "frequency": "Once daily",
+            "startDate": "2020-02-15"
+          }
+        ],
+        "lastVisit": "2025-11-06",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Bharti AXA Health",
+        "policyNumber": "BA789456123",
+        "validUntil": "2026-11-28"
+      }
+    },
+    {
+      "patientId": "PAT-098",
+      "personalInfo": {
+        "firstName": "Rakul",
+        "lastName": "Preet Singh",
+        "age": 34,
+        "gender": "Female",
+        "dateOfBirth": "1990-10-10",
+        "bloodType": "A-",
+        "phone": "+91-4321098765",
+        "email": "rakul.preet@email.com",
+        "emergencyContact": {
+          "name": "Jackky Bhagnani",
+          "relationship": "Partner",
+          "phone": "+91-4321098764"
+        }
+      },
+      "address": {
+        "street": "8689, Banjara Hills",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500034",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Fitness Overtraining Syndrome",
+            "diagnosedDate": "2021-09-18",
+            "severity": "Moderate",
+            "status": "Recovered",
+            "notes": "Excessive workout regimen, balanced approach now"
+          },
+          {
+            "condition": "Hormonal Imbalance",
+            "diagnosedDate": "2022-03-25",
+            "severity": "Mild",
+            "status": "Corrected",
+            "notes": "Due to overtraining, cycles regularized"
+          }
+        ],
+        "allergies": ["Pre-workout supplements", "Certain protein powders"],
+        "currentMedications": [
+          {
+            "name": "Balanced fitness program",
+            "dosage": "N/A",
+            "frequency": "5 days weekly",
+            "startDate": "2021-11-01"
+          },
+          {
+            "name": "Omega-3 supplements",
+            "dosage": "1000mg",
+            "frequency": "Once daily",
+            "startDate": "2022-04-01"
+          }
+        ],
+        "lastVisit": "2025-11-05",
+        "riskLevel": "Low"
+      },
+      "insurance": {
+        "provider": "Digit General Insurance",
+        "policyNumber": "DG321789654",
+        "validUntil": "2026-10-10"
+      }
+    },
+    {
+      "patientId": "PAT-099",
+      "personalInfo": {
+        "firstName": "Tapsee",
+        "lastName": "Pannu",
+        "age": 37,
+        "gender": "Female",
+        "dateOfBirth": "1987-08-01",
+        "bloodType": "B+",
+        "phone": "+91-3210987654",
+        "email": "tapsee.pannu@email.com",
+        "emergencyContact": {
+          "name": "Shagun Pannu",
+          "relationship": "Sister",
+          "phone": "+91-3210987653"
+        }
+      },
+      "address": {
+        "street": "8790, Panchkula",
+        "city": "Chandigarh",
+        "state": "Chandigarh",
+        "pincode": "134109",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Diabetes Type 1",
+            "diagnosedDate": "2022-10-15",
+            "severity": "Moderate",
+            "status": "Well-controlled",
+            "notes": "Adult-onset Type 1, excellent glucose management"
+          },
+          {
+            "condition": "Diabetic Ketoacidosis (Episode)",
+            "diagnosedDate": "2022-10-10",
+            "severity": "Severe",
+            "status": "Resolved",
+            "notes": "Initial presentation, hospitalization required"
+          }
+        ],
+        "allergies": ["Rapid-acting insulin (certain brands)", "Adhesive sensors"],
+        "currentMedications": [
+          {
+            "name": "Insulin Detemir",
+            "dosage": "20 units",
+            "frequency": "Once daily",
+            "startDate": "2022-11-01"
+          },
+          {
+            "name": "Insulin Lispro",
+            "dosage": "Variable",
+            "frequency": "Before meals",
+            "startDate": "2022-11-01"
+          }
+        ],
+        "lastVisit": "2025-11-24",
+        "riskLevel": "Moderate"
+      },
+      "insurance": {
+        "provider": "IFFCO Tokio Health",
+        "policyNumber": "IT654789321",
+        "validUntil": "2026-08-01"
+      }
+    },
+    {
+      "patientId": "PAT-100",
+      "personalInfo": {
+        "firstName": "Bhavana",
+        "lastName": "Menon",
+        "age": 40,
+        "gender": "Female",
+        "dateOfBirth": "1984-06-06",
+        "bloodType": "AB+",
+        "phone": "+91-2109876543",
+        "email": "bhavana.menon@email.com",
+        "emergencyContact": {
+          "name": "Naveen Kumar",
+          "relationship": "Spouse",
+          "phone": "+91-2109876542"
+        }
+      },
+      "address": {
+        "street": "8901, Thrissur",
+        "city": "Kochi",
+        "state": "Kerala",
+        "pincode": "680001",
+        "country": "India"
+      },
+      "medicalHistory": {
+        "majorConditions": [
+          {
+            "condition": "Stage 4 Cancer (Gallbladder)",
+            "diagnosedDate": "2023-10-20",
+            "severity": "Critical",
+            "status": "Under Treatment",
+            "notes": "Advanced stage, palliative chemotherapy ongoing"
+          },
+          {
+            "condition": "Chronic Pain",
+            "diagnosedDate": "2024-01-15",
+            "severity": "Severe",
+            "status": "Managed",
+            "notes": "Cancer-related pain, comprehensive pain management"
+          }
+        ],
+        "allergies": ["Gemcitabine", "Strong opioids"],
+        "currentMedications": [
+          {
+            "name": "Palliative chemotherapy",
+            "dosage": "Variable",
+            "frequency": "Cycle-based",
+            "startDate": "2023-11-15"
+          },
+          {
+            "name": "Morphine SR",
+            "dosage": "30mg",
+            "frequency": "Twice daily",
+            "startDate": "2024-02-01"
+          }
+        ],
+        "lastVisit": "2025-11-23",
+        "riskLevel": "Critical"
+      },
+      "insurance": {
+        "provider": "Go Digit Health",
+        "policyNumber": "GD456123789",
+        "validUntil": "2026-06-06"
+      }
+    }
+  ]
+}

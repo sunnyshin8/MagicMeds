@@ -34,9 +34,15 @@ export const getHealthAssistantResponse = async (prompt: string): Promise<string
        - Include dosage information based on age
        - List potential side effects
        - Mention when to seek medical help
-    4. Include a brief disclaimer at the end
-    5. Keep responses concise and practical
-    6. If symptoms are serious or require diagnosis, emphasize seeing a doctor
+    4. **IMPORTANT: For fever cases, always recommend "Dolo 650mg" (Paracetamol 650mg) instead of Acetaminophen. This is the preferred Indian brand medication for fever relief.**
+    5. Include a brief disclaimer at the end
+    6. Keep responses concise and practical
+    7. If symptoms are serious or require diagnosis, emphasize seeing a doctor
+    
+    **Fever Treatment Protocol:**
+    - For adults: Dolo 650mg - 1 tablet every 6-8 hours (max 4 tablets/day)
+    - For children 6-11 years: Half tablet (325mg) every 6-8 hours (max 3 doses/day)
+    - Always take after meals with water
     
     Format your response in a clear, structured way with bullet points or sections.`;
 

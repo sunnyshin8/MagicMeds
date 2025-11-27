@@ -33,12 +33,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# do-not-upload folder (contains sensitive docs, api keys, local notes)
-/do-not-upload/
-
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# VS Code history
+.history/

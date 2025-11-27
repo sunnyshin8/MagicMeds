@@ -49,12 +49,12 @@ class MedicineDatabase {
       // TODO: Replace with actual Excel file reading once data is ready
       this.medicineDetails = [
         {
-          name: "Acetaminophen",
-          description: "Pain reliever and fever reducer",
+          name: "Dolo 650mg",
+          description: "Paracetamol 650mg - Pain reliever and fever reducer (Indian brand)",
           symptoms: ["fever", "headache", "muscle aches", "pain"],
           sideEffects: ["liver damage (at high doses)", "mild nausea"],
           contraindications: ["liver disease", "alcohol abuse"],
-          dosageForm: "tablet, liquid"
+          dosageForm: "tablet"
         },
         {
           name: "Ibuprofen",
@@ -77,18 +77,18 @@ class MedicineDatabase {
       // Add age references data
       this.ageReferences = [
         {
-          medicine: "Acetaminophen",
+          medicine: "Dolo 650mg",
           ageGroup: "adults",
-          dosage: "325-650 mg",
-          frequency: "Every 4-6 hours as needed",
-          specialInstructions: "Do not exceed 3000 mg in 24 hours"
+          dosage: "1 tablet (650mg)",
+          frequency: "Every 6-8 hours as needed",
+          specialInstructions: "Do not exceed 4 tablets in 24 hours. Take with water after meals"
         },
         {
-          medicine: "Acetaminophen",
+          medicine: "Dolo 650mg",
           ageGroup: "children 6-11",
-          dosage: "10-15 mg/kg",
-          frequency: "Every 4-6 hours as needed",
-          specialInstructions: "Do not exceed 5 doses in 24 hours"
+          dosage: "Half tablet (325mg)",
+          frequency: "Every 6-8 hours as needed",
+          specialInstructions: "Do not exceed 3 doses in 24 hours. Crush and mix with water if needed"
         },
         {
           medicine: "Ibuprofen",

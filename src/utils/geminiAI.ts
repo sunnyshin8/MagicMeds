@@ -1,9 +1,14 @@
-/**
+﻿/**
  * Gemini 2.5-Flash AI Integration
  * For real-time dashboard analytics and predictive features
  */
 
-const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY || 'AIzaSyAAUDiEATiv8gbO7i6kP7kiJnNtYBsmHzo';
+const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+
+if (!GEMINI_API_KEY) {
+  console.warn('Warning: NEXT_PUBLIC_GEMINI_API_KEY is not set. Some features may not work.');
+}
+
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
 interface GeminiAnalysis {
@@ -270,7 +275,7 @@ export async function detectAnomalies(
     Analyze the following metrics for anomalies compared to historical averages:
     
     Current vs Historical:
-    - Temperature: ${metrics.avgTemperature}°C vs ${metrics.historicalAvg}°C avg
+    - Temperature: ${metrics.avgTemperature}┬░C vs ${metrics.historicalAvg}┬░C avg
     - Critical Rate: ${(metrics.criticalCaseRate * 100).toFixed(1)}% vs ${(metrics.historicalCriticalRate * 100).toFixed(1)}%
     - Response Time: ${metrics.responseTime}min vs ${metrics.historicalResponseTime}min avg
     

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import NavBar from '@/components/NavBar';
-import Footer from '@/components/Footer';
 import ThemeRegistry from './ThemeRegistry';
 import "./globals.css";
 
@@ -27,13 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased m-0 p-0">
+      <body className="antialiased">
         <ThemeRegistry>
           <NavBar />
-          <main className="min-h-screen">
+          <main className="min-h-screen pb-8">
             {children}
           </main>
-          <Footer />
         </ThemeRegistry>
       </body>
     </html>
